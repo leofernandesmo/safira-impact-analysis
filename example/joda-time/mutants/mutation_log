@@ -1,0 +1,1531 @@
+AORB_1:32:int_safeAdd(int,int):val1 + val2 => val1 * val2
+AORB_2:32:int_safeAdd(int,int):val1 + val2 => val1 / val2
+AORB_3:32:int_safeAdd(int,int):val1 + val2 => val1 % val2
+AORB_4:32:int_safeAdd(int,int):val1 + val2 => val1 - val2
+AORB_5:41:long_safeAdd(long,long):val1 + val2 => val1 * val2
+AORB_6:41:long_safeAdd(long,long):val1 + val2 => val1 / val2
+AORB_7:41:long_safeAdd(long,long):val1 + val2 => val1 % val2
+AORB_8:41:long_safeAdd(long,long):val1 + val2 => val1 - val2
+AORB_9:50:long_safeSubtract(long,long):val1 - val2 => val1 * val2
+AORB_10:50:long_safeSubtract(long,long):val1 - val2 => val1 / val2
+AORB_11:50:long_safeSubtract(long,long):val1 - val2 => val1 % val2
+AORB_12:50:long_safeSubtract(long,long):val1 - val2 => val1 + val2
+AORB_13:59:int_safeMultiply(int,int):(long) val1 * (long) val2 => (long) val1 / (long) val2
+AORB_14:59:int_safeMultiply(int,int):(long) val1 * (long) val2 => (long) val1 % (long) val2
+AORB_15:59:int_safeMultiply(int,int):(long) val1 * (long) val2 => (long) val1 + (long) val2
+AORB_16:59:int_safeMultiply(int,int):(long) val1 * (long) val2 => (long) val1 - (long) val2
+AORB_17:82:long_safeMultiply(long,int):val1 * val2 => val1 / val2
+AORB_18:82:long_safeMultiply(long,int):val1 * val2 => val1 % val2
+AORB_19:82:long_safeMultiply(long,int):val1 * val2 => val1 + val2
+AORB_20:82:long_safeMultiply(long,int):val1 * val2 => val1 - val2
+AORB_21:83:long_safeMultiply(long,int):total / val2 => total * val2
+AORB_22:83:long_safeMultiply(long,int):total / val2 => total % val2
+AORB_23:83:long_safeMultiply(long,int):total / val2 => total + val2
+AORB_24:83:long_safeMultiply(long,int):total / val2 => total - val2
+AORB_25:100:long_safeMultiply(long,long):val1 * val2 => val1 / val2
+AORB_26:100:long_safeMultiply(long,long):val1 * val2 => val1 % val2
+AORB_27:100:long_safeMultiply(long,long):val1 * val2 => val1 + val2
+AORB_28:100:long_safeMultiply(long,long):val1 * val2 => val1 - val2
+AORB_29:101:long_safeMultiply(long,long):total / val2 => total * val2
+AORB_30:101:long_safeMultiply(long,long):total / val2 => total % val2
+AORB_31:101:long_safeMultiply(long,long):total / val2 => total + val2
+AORB_32:101:long_safeMultiply(long,long):total / val2 => total - val2
+AORB_33:112:long_safeDivide(long,long):dividend / divisor => dividend * divisor
+AORB_34:112:long_safeDivide(long,long):dividend / divisor => dividend % divisor
+AORB_35:112:long_safeDivide(long,long):dividend / divisor => dividend + divisor
+AORB_36:112:long_safeDivide(long,long):dividend / divisor => dividend - divisor
+AORB_37:162:int_getWrappedValue(int,int,int,int):currentValue + wrapValue => currentValue * wrapValue
+AORB_38:162:int_getWrappedValue(int,int,int,int):currentValue + wrapValue => currentValue / wrapValue
+AORB_39:162:int_getWrappedValue(int,int,int,int):currentValue + wrapValue => currentValue % wrapValue
+AORB_40:162:int_getWrappedValue(int,int,int,int):currentValue + wrapValue => currentValue - wrapValue
+AORB_41:170:int_getWrappedValue(int,int,int):maxValue - minValue => maxValue * minValue
+AORB_42:170:int_getWrappedValue(int,int,int):maxValue - minValue => maxValue / minValue
+AORB_43:170:int_getWrappedValue(int,int,int):maxValue - minValue => maxValue % minValue
+AORB_44:170:int_getWrappedValue(int,int,int):maxValue - minValue => maxValue + minValue
+AORB_45:170:int_getWrappedValue(int,int,int):maxValue - minValue + 1 => (maxValue - minValue) * 1
+AORB_46:170:int_getWrappedValue(int,int,int):maxValue - minValue + 1 => (maxValue - minValue) / 1
+AORB_47:170:int_getWrappedValue(int,int,int):maxValue - minValue + 1 => (maxValue - minValue) % 1
+AORB_48:170:int_getWrappedValue(int,int,int):maxValue - minValue + 1 => maxValue - minValue - 1
+AORB_49:173:int_getWrappedValue(int,int,int):value % wrapRange => value * wrapRange
+AORB_50:173:int_getWrappedValue(int,int,int):value % wrapRange => value / wrapRange
+AORB_51:173:int_getWrappedValue(int,int,int):value % wrapRange => value + wrapRange
+AORB_52:173:int_getWrappedValue(int,int,int):value % wrapRange => value - wrapRange
+AORB_53:173:int_getWrappedValue(int,int,int):value % wrapRange + minValue => value % wrapRange * minValue
+AORB_54:173:int_getWrappedValue(int,int,int):value % wrapRange + minValue => value % wrapRange / minValue
+AORB_55:173:int_getWrappedValue(int,int,int):value % wrapRange + minValue => value % wrapRange % minValue
+AORB_56:173:int_getWrappedValue(int,int,int):value % wrapRange + minValue => value % wrapRange - minValue
+AORB_57:175:int_getWrappedValue(int,int,int):-value % wrapRange => -value * wrapRange
+AORB_58:175:int_getWrappedValue(int,int,int):-value % wrapRange => -value / wrapRange
+AORB_59:175:int_getWrappedValue(int,int,int):-value % wrapRange => -value + wrapRange
+AORB_60:175:int_getWrappedValue(int,int,int):-value % wrapRange => -value - wrapRange
+AORB_61:177:int_getWrappedValue(int,int,int):0 + minValue => 0 * minValue
+AORB_62:177:int_getWrappedValue(int,int,int):0 + minValue => 0 / minValue
+AORB_63:177:int_getWrappedValue(int,int,int):0 + minValue => 0 % minValue
+AORB_64:177:int_getWrappedValue(int,int,int):0 + minValue => 0 - minValue
+AORB_65:179:int_getWrappedValue(int,int,int):wrapRange - remByRange => wrapRange * remByRange
+AORB_66:179:int_getWrappedValue(int,int,int):wrapRange - remByRange => wrapRange / remByRange
+AORB_67:179:int_getWrappedValue(int,int,int):wrapRange - remByRange => wrapRange % remByRange
+AORB_68:179:int_getWrappedValue(int,int,int):wrapRange - remByRange => wrapRange + remByRange
+AORB_69:179:int_getWrappedValue(int,int,int):wrapRange - remByRange + minValue => (wrapRange - remByRange) * minValue
+AORB_70:179:int_getWrappedValue(int,int,int):wrapRange - remByRange + minValue => (wrapRange - remByRange) / minValue
+AORB_71:179:int_getWrappedValue(int,int,int):wrapRange - remByRange + minValue => (wrapRange - remByRange) % minValue
+AORB_72:179:int_getWrappedValue(int,int,int):wrapRange - remByRange + minValue => wrapRange - remByRange - minValue
+AODU_1:27:int_safeNegate(int):-value => value
+AODU_2:69:long_safeMultiply(long,int):-1 => 1
+AODU_3:73:long_safeMultiply(long,int):-val1 => val1
+AODU_4:101:long_safeMultiply(long,long):-1 => 1
+AODU_5:101:long_safeMultiply(long,long):-1 => 1
+AODU_6:109:long_safeDivide(long,long):-1L => 1L
+AODU_7:117:long_safeDivide(long,long,java.math.RoundingMode):-1L => 1L
+AODU_8:175:int_getWrappedValue(int,int,int):-value => value
+AOIU_1:24:int_safeNegate(int):value => -value
+AOIU_2:24:int_safeNegate(int):Integer.MIN_VALUE => -Integer.MIN_VALUE
+AOIU_3:32:int_safeAdd(int,int):val1 => -val1
+AOIU_4:36:int_safeAdd(int,int):sum => -sum
+AOIU_5:41:long_safeAdd(long,long):val1 => -val1
+AOIU_6:45:long_safeAdd(long,long):sum => -sum
+AOIU_7:50:long_safeSubtract(long,long):val1 => -val1
+AOIU_8:54:long_safeSubtract(long,long):diff => -diff
+AOIU_9:59:int_safeMultiply(int,int):val1 => -val1
+AOIU_10:59:int_safeMultiply(int,int):val2 => -val2
+AOIU_11:63:int_safeMultiply(int,int):total => -total
+AOIU_12:68:long_safeMultiply(long,int):val2 => -val2
+AOIU_13:70:long_safeMultiply(long,int):val1 => -val1
+AOIU_14:70:long_safeMultiply(long,int):Long.MIN_VALUE => -Long.MIN_VALUE
+AOIU_15:79:long_safeMultiply(long,int):val1 => -val1
+AOIU_16:82:long_safeMultiply(long,int):val1 => -val1
+AOIU_17:83:long_safeMultiply(long,int):total => -total
+AOIU_18:83:long_safeMultiply(long,int):val1 => -val1
+AOIU_19:86:long_safeMultiply(long,int):total => -total
+AOIU_20:91:long_safeMultiply(long,long):val2 => -val2
+AOIU_21:92:long_safeMultiply(long,long):val1 => -val1
+AOIU_22:94:long_safeMultiply(long,long):val1 => -val1
+AOIU_23:95:long_safeMultiply(long,long):val2 => -val2
+AOIU_24:100:long_safeMultiply(long,long):val1 => -val1
+AOIU_25:104:long_safeMultiply(long,long):total => -total
+AOIU_26:112:long_safeDivide(long,long):dividend => -dividend
+AOIU_27:120:long_safeDivide(long,long,java.math.RoundingMode):dividend => -dividend
+AOIU_28:121:long_safeDivide(long,long,java.math.RoundingMode):divisor => -divisor
+AOIU_29:128:int_safeToInt(long):value => -value
+AOIU_30:135:int_safeMultiplyToInt(long,long):val1 => -val1
+AOIU_31:135:int_safeMultiplyToInt(long,long):val2 => -val2
+AOIU_32:136:int_safeMultiplyToInt(long,long):val => -val
+AOIU_33:142:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int):value => -value
+AOIU_34:142:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int):lowerBound => -lowerBound
+AOIU_35:142:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int):upperBound => -upperBound
+AOIU_36:149:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):value => -value
+AOIU_37:149:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):lowerBound => -lowerBound
+AOIU_38:149:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):upperBound => -upperBound
+AOIU_39:156:void_verifyValueBounds(java.lang.String,int,int,int):value => -value
+AOIU_40:156:void_verifyValueBounds(java.lang.String,int,int,int):lowerBound => -lowerBound
+AOIU_41:156:void_verifyValueBounds(java.lang.String,int,int,int):upperBound => -upperBound
+AOIU_42:162:int_getWrappedValue(int,int,int,int):currentValue => -currentValue
+AOIU_43:162:int_getWrappedValue(int,int,int,int):minValue => -minValue
+AOIU_44:162:int_getWrappedValue(int,int,int,int):maxValue => -maxValue
+AOIU_45:167:int_getWrappedValue(int,int,int):minValue => -minValue
+AOIU_46:167:int_getWrappedValue(int,int,int):maxValue => -maxValue
+AOIU_47:170:int_getWrappedValue(int,int,int):maxValue => -maxValue
+AOIU_48:171:int_getWrappedValue(int,int,int):minValue => -minValue
+AOIU_49:172:int_getWrappedValue(int,int,int):value => -value
+AOIU_50:173:int_getWrappedValue(int,int,int):value => -value
+AOIU_51:176:int_getWrappedValue(int,int,int):remByRange => -remByRange
+AOIU_52:179:int_getWrappedValue(int,int,int):wrapRange => -wrapRange
+AOIS_1:31:int_safeNegate(int):value => ++value
+AOIS_2:31:int_safeNegate(int):value => --value
+AOIS_3:31:int_safeNegate(int):value => value++
+AOIS_4:31:int_safeNegate(int):value => value--
+AOIS_5:24:int_safeNegate(int):Integer.MIN_VALUE => ++Integer.MIN_VALUE
+AOIS_6:24:int_safeNegate(int):Integer.MIN_VALUE => --Integer.MIN_VALUE
+AOIS_7:24:int_safeNegate(int):Integer.MIN_VALUE => Integer.MIN_VALUE++
+AOIS_8:24:int_safeNegate(int):Integer.MIN_VALUE => Integer.MIN_VALUE--
+AOIS_9:39:int_safeAdd(int,int):val1 => ++val1
+AOIS_10:39:int_safeAdd(int,int):val1 => --val1
+AOIS_11:39:int_safeAdd(int,int):val1 => val1++
+AOIS_12:39:int_safeAdd(int,int):val1 => val1--
+AOIS_13:39:int_safeAdd(int,int):val2 => ++val2
+AOIS_14:39:int_safeAdd(int,int):val2 => --val2
+AOIS_15:39:int_safeAdd(int,int):val2 => val2++
+AOIS_16:39:int_safeAdd(int,int):val2 => val2--
+AOIS_17:40:int_safeAdd(int,int):val1 => ++val1
+AOIS_18:40:int_safeAdd(int,int):val1 => --val1
+AOIS_19:40:int_safeAdd(int,int):val1 => val1++
+AOIS_20:40:int_safeAdd(int,int):val1 => val1--
+AOIS_21:40:int_safeAdd(int,int):sum => ++sum
+AOIS_22:40:int_safeAdd(int,int):sum => --sum
+AOIS_23:40:int_safeAdd(int,int):sum => sum++
+AOIS_24:40:int_safeAdd(int,int):sum => sum--
+AOIS_25:40:int_safeAdd(int,int):val1 => ++val1
+AOIS_26:40:int_safeAdd(int,int):val1 => --val1
+AOIS_27:40:int_safeAdd(int,int):val1 => val1++
+AOIS_28:40:int_safeAdd(int,int):val1 => val1--
+AOIS_29:40:int_safeAdd(int,int):val2 => ++val2
+AOIS_30:40:int_safeAdd(int,int):val2 => --val2
+AOIS_31:40:int_safeAdd(int,int):val2 => val2++
+AOIS_32:40:int_safeAdd(int,int):val2 => val2--
+AOIS_33:41:int_safeAdd(int,int):val1 => ++val1
+AOIS_34:41:int_safeAdd(int,int):val1 => --val1
+AOIS_35:41:int_safeAdd(int,int):val1 => val1++
+AOIS_36:41:int_safeAdd(int,int):val1 => val1--
+AOIS_37:41:int_safeAdd(int,int):val2 => val2++
+AOIS_38:41:int_safeAdd(int,int):val2 => val2--
+AOIS_39:43:int_safeAdd(int,int):sum => sum++
+AOIS_40:43:int_safeAdd(int,int):sum => sum--
+AOIS_41:48:long_safeAdd(long,long):val1 => ++val1
+AOIS_42:48:long_safeAdd(long,long):val1 => --val1
+AOIS_43:48:long_safeAdd(long,long):val1 => val1++
+AOIS_44:48:long_safeAdd(long,long):val1 => val1--
+AOIS_45:48:long_safeAdd(long,long):val2 => ++val2
+AOIS_46:48:long_safeAdd(long,long):val2 => --val2
+AOIS_47:48:long_safeAdd(long,long):val2 => val2++
+AOIS_48:48:long_safeAdd(long,long):val2 => val2--
+AOIS_49:49:long_safeAdd(long,long):val1 => ++val1
+AOIS_50:49:long_safeAdd(long,long):val1 => --val1
+AOIS_51:49:long_safeAdd(long,long):val1 => val1++
+AOIS_52:49:long_safeAdd(long,long):val1 => val1--
+AOIS_53:49:long_safeAdd(long,long):sum => ++sum
+AOIS_54:49:long_safeAdd(long,long):sum => --sum
+AOIS_55:49:long_safeAdd(long,long):sum => sum++
+AOIS_56:49:long_safeAdd(long,long):sum => sum--
+AOIS_57:49:long_safeAdd(long,long):val1 => ++val1
+AOIS_58:49:long_safeAdd(long,long):val1 => --val1
+AOIS_59:49:long_safeAdd(long,long):val1 => val1++
+AOIS_60:49:long_safeAdd(long,long):val1 => val1--
+AOIS_61:49:long_safeAdd(long,long):val2 => ++val2
+AOIS_62:49:long_safeAdd(long,long):val2 => --val2
+AOIS_63:49:long_safeAdd(long,long):val2 => val2++
+AOIS_64:49:long_safeAdd(long,long):val2 => val2--
+AOIS_65:50:long_safeAdd(long,long):val1 => ++val1
+AOIS_66:50:long_safeAdd(long,long):val1 => --val1
+AOIS_67:50:long_safeAdd(long,long):val1 => val1++
+AOIS_68:50:long_safeAdd(long,long):val1 => val1--
+AOIS_69:50:long_safeAdd(long,long):val2 => val2++
+AOIS_70:50:long_safeAdd(long,long):val2 => val2--
+AOIS_71:52:long_safeAdd(long,long):sum => sum++
+AOIS_72:52:long_safeAdd(long,long):sum => sum--
+AOIS_73:57:long_safeSubtract(long,long):val1 => ++val1
+AOIS_74:57:long_safeSubtract(long,long):val1 => --val1
+AOIS_75:57:long_safeSubtract(long,long):val1 => val1++
+AOIS_76:57:long_safeSubtract(long,long):val1 => val1--
+AOIS_77:57:long_safeSubtract(long,long):val2 => ++val2
+AOIS_78:57:long_safeSubtract(long,long):val2 => --val2
+AOIS_79:57:long_safeSubtract(long,long):val2 => val2++
+AOIS_80:57:long_safeSubtract(long,long):val2 => val2--
+AOIS_81:58:long_safeSubtract(long,long):val1 => ++val1
+AOIS_82:58:long_safeSubtract(long,long):val1 => --val1
+AOIS_83:58:long_safeSubtract(long,long):val1 => val1++
+AOIS_84:58:long_safeSubtract(long,long):val1 => val1--
+AOIS_85:58:long_safeSubtract(long,long):diff => ++diff
+AOIS_86:58:long_safeSubtract(long,long):diff => --diff
+AOIS_87:58:long_safeSubtract(long,long):diff => diff++
+AOIS_88:58:long_safeSubtract(long,long):diff => diff--
+AOIS_89:58:long_safeSubtract(long,long):val1 => ++val1
+AOIS_90:58:long_safeSubtract(long,long):val1 => --val1
+AOIS_91:58:long_safeSubtract(long,long):val1 => val1++
+AOIS_92:58:long_safeSubtract(long,long):val1 => val1--
+AOIS_93:58:long_safeSubtract(long,long):val2 => ++val2
+AOIS_94:58:long_safeSubtract(long,long):val2 => --val2
+AOIS_95:58:long_safeSubtract(long,long):val2 => val2++
+AOIS_96:58:long_safeSubtract(long,long):val2 => val2--
+AOIS_97:59:long_safeSubtract(long,long):val1 => ++val1
+AOIS_98:59:long_safeSubtract(long,long):val1 => --val1
+AOIS_99:59:long_safeSubtract(long,long):val1 => val1++
+AOIS_100:59:long_safeSubtract(long,long):val1 => val1--
+AOIS_101:59:long_safeSubtract(long,long):val2 => val2++
+AOIS_102:59:long_safeSubtract(long,long):val2 => val2--
+AOIS_103:61:long_safeSubtract(long,long):diff => diff++
+AOIS_104:61:long_safeSubtract(long,long):diff => diff--
+AOIS_105:66:int_safeMultiply(int,int):val1 => ++val1
+AOIS_106:66:int_safeMultiply(int,int):val1 => --val1
+AOIS_107:66:int_safeMultiply(int,int):val1 => val1++
+AOIS_108:66:int_safeMultiply(int,int):val1 => val1--
+AOIS_109:66:int_safeMultiply(int,int):val2 => ++val2
+AOIS_110:66:int_safeMultiply(int,int):val2 => --val2
+AOIS_111:66:int_safeMultiply(int,int):val2 => val2++
+AOIS_112:66:int_safeMultiply(int,int):val2 => val2--
+AOIS_113:67:int_safeMultiply(int,int):total => ++total
+AOIS_114:67:int_safeMultiply(int,int):total => --total
+AOIS_115:67:int_safeMultiply(int,int):total => total++
+AOIS_116:67:int_safeMultiply(int,int):total => total--
+AOIS_117:60:int_safeMultiply(int,int):Integer.MIN_VALUE => ++Integer.MIN_VALUE
+AOIS_118:60:int_safeMultiply(int,int):Integer.MIN_VALUE => --Integer.MIN_VALUE
+AOIS_119:60:int_safeMultiply(int,int):Integer.MIN_VALUE => Integer.MIN_VALUE++
+AOIS_120:60:int_safeMultiply(int,int):Integer.MIN_VALUE => Integer.MIN_VALUE--
+AOIS_121:67:int_safeMultiply(int,int):total => ++total
+AOIS_122:67:int_safeMultiply(int,int):total => --total
+AOIS_123:67:int_safeMultiply(int,int):total => total++
+AOIS_124:67:int_safeMultiply(int,int):total => total--
+AOIS_125:60:int_safeMultiply(int,int):Integer.MAX_VALUE => ++Integer.MAX_VALUE
+AOIS_126:60:int_safeMultiply(int,int):Integer.MAX_VALUE => --Integer.MAX_VALUE
+AOIS_127:60:int_safeMultiply(int,int):Integer.MAX_VALUE => Integer.MAX_VALUE++
+AOIS_128:60:int_safeMultiply(int,int):Integer.MAX_VALUE => Integer.MAX_VALUE--
+AOIS_129:68:int_safeMultiply(int,int):val1 => ++val1
+AOIS_130:68:int_safeMultiply(int,int):val1 => --val1
+AOIS_131:68:int_safeMultiply(int,int):val1 => val1++
+AOIS_132:68:int_safeMultiply(int,int):val1 => val1--
+AOIS_133:68:int_safeMultiply(int,int):val2 => val2++
+AOIS_134:68:int_safeMultiply(int,int):val2 => val2--
+AOIS_135:70:int_safeMultiply(int,int):total => total++
+AOIS_136:70:int_safeMultiply(int,int):total => total--
+AOIS_137:75:long_safeMultiply(long,int):val2 => val2++
+AOIS_138:75:long_safeMultiply(long,int):val2 => val2--
+AOIS_139:77:long_safeMultiply(long,int):val1 => ++val1
+AOIS_140:77:long_safeMultiply(long,int):val1 => --val1
+AOIS_141:77:long_safeMultiply(long,int):val1 => val1++
+AOIS_142:77:long_safeMultiply(long,int):val1 => val1--
+AOIS_143:70:long_safeMultiply(long,int):Long.MIN_VALUE => ++Long.MIN_VALUE
+AOIS_144:70:long_safeMultiply(long,int):Long.MIN_VALUE => --Long.MIN_VALUE
+AOIS_145:70:long_safeMultiply(long,int):Long.MIN_VALUE => Long.MIN_VALUE++
+AOIS_146:70:long_safeMultiply(long,int):Long.MIN_VALUE => Long.MIN_VALUE--
+AOIS_147:78:long_safeMultiply(long,int):val1 => ++val1
+AOIS_148:78:long_safeMultiply(long,int):val1 => --val1
+AOIS_149:78:long_safeMultiply(long,int):val1 => val1++
+AOIS_150:78:long_safeMultiply(long,int):val1 => val1--
+AOIS_151:78:long_safeMultiply(long,int):val2 => val2++
+AOIS_152:78:long_safeMultiply(long,int):val2 => val2--
+AOIS_153:86:long_safeMultiply(long,int):val1 => val1++
+AOIS_154:86:long_safeMultiply(long,int):val1 => val1--
+AOIS_155:89:long_safeMultiply(long,int):val1 => ++val1
+AOIS_156:89:long_safeMultiply(long,int):val1 => --val1
+AOIS_157:89:long_safeMultiply(long,int):val1 => val1++
+AOIS_158:89:long_safeMultiply(long,int):val1 => val1--
+AOIS_159:89:long_safeMultiply(long,int):val2 => ++val2
+AOIS_160:89:long_safeMultiply(long,int):val2 => --val2
+AOIS_161:89:long_safeMultiply(long,int):val2 => val2++
+AOIS_162:89:long_safeMultiply(long,int):val2 => val2--
+AOIS_163:90:long_safeMultiply(long,int):total => ++total
+AOIS_164:90:long_safeMultiply(long,int):total => --total
+AOIS_165:90:long_safeMultiply(long,int):total => total++
+AOIS_166:90:long_safeMultiply(long,int):total => total--
+AOIS_167:90:long_safeMultiply(long,int):val2 => ++val2
+AOIS_168:90:long_safeMultiply(long,int):val2 => --val2
+AOIS_169:90:long_safeMultiply(long,int):val2 => val2++
+AOIS_170:90:long_safeMultiply(long,int):val2 => val2--
+AOIS_171:90:long_safeMultiply(long,int):val1 => val1++
+AOIS_172:90:long_safeMultiply(long,int):val1 => val1--
+AOIS_173:91:long_safeMultiply(long,int):val1 => ++val1
+AOIS_174:91:long_safeMultiply(long,int):val1 => --val1
+AOIS_175:91:long_safeMultiply(long,int):val1 => val1++
+AOIS_176:91:long_safeMultiply(long,int):val1 => val1--
+AOIS_177:91:long_safeMultiply(long,int):val2 => val2++
+AOIS_178:91:long_safeMultiply(long,int):val2 => val2--
+AOIS_179:93:long_safeMultiply(long,int):total => total++
+AOIS_180:93:long_safeMultiply(long,int):total => total--
+AOIS_181:98:long_safeMultiply(long,long):val2 => ++val2
+AOIS_182:98:long_safeMultiply(long,long):val2 => --val2
+AOIS_183:98:long_safeMultiply(long,long):val2 => val2++
+AOIS_184:98:long_safeMultiply(long,long):val2 => val2--
+AOIS_185:99:long_safeMultiply(long,long):val1 => val1++
+AOIS_186:99:long_safeMultiply(long,long):val1 => val1--
+AOIS_187:101:long_safeMultiply(long,long):val1 => ++val1
+AOIS_188:101:long_safeMultiply(long,long):val1 => --val1
+AOIS_189:101:long_safeMultiply(long,long):val1 => val1++
+AOIS_190:101:long_safeMultiply(long,long):val1 => val1--
+AOIS_191:102:long_safeMultiply(long,long):val2 => val2++
+AOIS_192:102:long_safeMultiply(long,long):val2 => val2--
+AOIS_193:104:long_safeMultiply(long,long):val1 => ++val1
+AOIS_194:104:long_safeMultiply(long,long):val1 => --val1
+AOIS_195:104:long_safeMultiply(long,long):val1 => val1++
+AOIS_196:104:long_safeMultiply(long,long):val1 => val1--
+AOIS_197:104:long_safeMultiply(long,long):val2 => ++val2
+AOIS_198:104:long_safeMultiply(long,long):val2 => --val2
+AOIS_199:104:long_safeMultiply(long,long):val2 => val2++
+AOIS_200:104:long_safeMultiply(long,long):val2 => val2--
+AOIS_201:107:long_safeMultiply(long,long):val1 => ++val1
+AOIS_202:107:long_safeMultiply(long,long):val1 => --val1
+AOIS_203:107:long_safeMultiply(long,long):val1 => val1++
+AOIS_204:107:long_safeMultiply(long,long):val1 => val1--
+AOIS_205:107:long_safeMultiply(long,long):val2 => ++val2
+AOIS_206:107:long_safeMultiply(long,long):val2 => --val2
+AOIS_207:107:long_safeMultiply(long,long):val2 => val2++
+AOIS_208:107:long_safeMultiply(long,long):val2 => val2--
+AOIS_209:108:long_safeMultiply(long,long):total => ++total
+AOIS_210:108:long_safeMultiply(long,long):total => --total
+AOIS_211:108:long_safeMultiply(long,long):total => total++
+AOIS_212:108:long_safeMultiply(long,long):total => total--
+AOIS_213:108:long_safeMultiply(long,long):val2 => ++val2
+AOIS_214:108:long_safeMultiply(long,long):val2 => --val2
+AOIS_215:108:long_safeMultiply(long,long):val2 => val2++
+AOIS_216:108:long_safeMultiply(long,long):val2 => val2--
+AOIS_217:108:long_safeMultiply(long,long):val1 => val1++
+AOIS_218:108:long_safeMultiply(long,long):val1 => val1--
+AOIS_219:108:long_safeMultiply(long,long):val1 => ++val1
+AOIS_220:108:long_safeMultiply(long,long):val1 => --val1
+AOIS_221:108:long_safeMultiply(long,long):val1 => val1++
+AOIS_222:108:long_safeMultiply(long,long):val1 => val1--
+AOIS_223:101:long_safeMultiply(long,long):Long.MIN_VALUE => ++Long.MIN_VALUE
+AOIS_224:101:long_safeMultiply(long,long):Long.MIN_VALUE => --Long.MIN_VALUE
+AOIS_225:101:long_safeMultiply(long,long):Long.MIN_VALUE => Long.MIN_VALUE++
+AOIS_226:101:long_safeMultiply(long,long):Long.MIN_VALUE => Long.MIN_VALUE--
+AOIS_227:108:long_safeMultiply(long,long):val2 => ++val2
+AOIS_228:108:long_safeMultiply(long,long):val2 => --val2
+AOIS_229:108:long_safeMultiply(long,long):val2 => val2++
+AOIS_230:108:long_safeMultiply(long,long):val2 => val2--
+AOIS_231:108:long_safeMultiply(long,long):val2 => ++val2
+AOIS_232:108:long_safeMultiply(long,long):val2 => --val2
+AOIS_233:108:long_safeMultiply(long,long):val2 => val2++
+AOIS_234:108:long_safeMultiply(long,long):val2 => val2--
+AOIS_235:101:long_safeMultiply(long,long):Long.MIN_VALUE => ++Long.MIN_VALUE
+AOIS_236:101:long_safeMultiply(long,long):Long.MIN_VALUE => --Long.MIN_VALUE
+AOIS_237:101:long_safeMultiply(long,long):Long.MIN_VALUE => Long.MIN_VALUE++
+AOIS_238:101:long_safeMultiply(long,long):Long.MIN_VALUE => Long.MIN_VALUE--
+AOIS_239:108:long_safeMultiply(long,long):val1 => ++val1
+AOIS_240:108:long_safeMultiply(long,long):val1 => --val1
+AOIS_241:108:long_safeMultiply(long,long):val1 => val1++
+AOIS_242:108:long_safeMultiply(long,long):val1 => val1--
+AOIS_243:109:long_safeMultiply(long,long):val1 => ++val1
+AOIS_244:109:long_safeMultiply(long,long):val1 => --val1
+AOIS_245:109:long_safeMultiply(long,long):val1 => val1++
+AOIS_246:109:long_safeMultiply(long,long):val1 => val1--
+AOIS_247:109:long_safeMultiply(long,long):val2 => val2++
+AOIS_248:109:long_safeMultiply(long,long):val2 => val2--
+AOIS_249:111:long_safeMultiply(long,long):total => total++
+AOIS_250:111:long_safeMultiply(long,long):total => total--
+AOIS_251:116:long_safeDivide(long,long):dividend => ++dividend
+AOIS_252:116:long_safeDivide(long,long):dividend => --dividend
+AOIS_253:116:long_safeDivide(long,long):dividend => dividend++
+AOIS_254:116:long_safeDivide(long,long):dividend => dividend--
+AOIS_255:109:long_safeDivide(long,long):Long.MIN_VALUE => ++Long.MIN_VALUE
+AOIS_256:109:long_safeDivide(long,long):Long.MIN_VALUE => --Long.MIN_VALUE
+AOIS_257:109:long_safeDivide(long,long):Long.MIN_VALUE => Long.MIN_VALUE++
+AOIS_258:109:long_safeDivide(long,long):Long.MIN_VALUE => Long.MIN_VALUE--
+AOIS_259:116:long_safeDivide(long,long):divisor => ++divisor
+AOIS_260:116:long_safeDivide(long,long):divisor => --divisor
+AOIS_261:116:long_safeDivide(long,long):divisor => divisor++
+AOIS_262:116:long_safeDivide(long,long):divisor => divisor--
+AOIS_263:117:long_safeDivide(long,long):dividend => ++dividend
+AOIS_264:117:long_safeDivide(long,long):dividend => --dividend
+AOIS_265:117:long_safeDivide(long,long):dividend => dividend++
+AOIS_266:117:long_safeDivide(long,long):dividend => dividend--
+AOIS_267:117:long_safeDivide(long,long):divisor => divisor++
+AOIS_268:117:long_safeDivide(long,long):divisor => divisor--
+AOIS_269:119:long_safeDivide(long,long):dividend => ++dividend
+AOIS_270:119:long_safeDivide(long,long):dividend => --dividend
+AOIS_271:119:long_safeDivide(long,long):dividend => dividend++
+AOIS_272:119:long_safeDivide(long,long):dividend => dividend--
+AOIS_273:119:long_safeDivide(long,long):divisor => ++divisor
+AOIS_274:119:long_safeDivide(long,long):divisor => --divisor
+AOIS_275:119:long_safeDivide(long,long):divisor => divisor++
+AOIS_276:119:long_safeDivide(long,long):divisor => divisor--
+AOIS_277:124:long_safeDivide(long,long,java.math.RoundingMode):dividend => ++dividend
+AOIS_278:124:long_safeDivide(long,long,java.math.RoundingMode):dividend => --dividend
+AOIS_279:124:long_safeDivide(long,long,java.math.RoundingMode):dividend => dividend++
+AOIS_280:124:long_safeDivide(long,long,java.math.RoundingMode):dividend => dividend--
+AOIS_281:117:long_safeDivide(long,long,java.math.RoundingMode):Long.MIN_VALUE => ++Long.MIN_VALUE
+AOIS_282:117:long_safeDivide(long,long,java.math.RoundingMode):Long.MIN_VALUE => --Long.MIN_VALUE
+AOIS_283:117:long_safeDivide(long,long,java.math.RoundingMode):Long.MIN_VALUE => Long.MIN_VALUE++
+AOIS_284:117:long_safeDivide(long,long,java.math.RoundingMode):Long.MIN_VALUE => Long.MIN_VALUE--
+AOIS_285:124:long_safeDivide(long,long,java.math.RoundingMode):divisor => ++divisor
+AOIS_286:124:long_safeDivide(long,long,java.math.RoundingMode):divisor => --divisor
+AOIS_287:124:long_safeDivide(long,long,java.math.RoundingMode):divisor => divisor++
+AOIS_288:124:long_safeDivide(long,long,java.math.RoundingMode):divisor => divisor--
+AOIS_289:125:long_safeDivide(long,long,java.math.RoundingMode):dividend => ++dividend
+AOIS_290:125:long_safeDivide(long,long,java.math.RoundingMode):dividend => --dividend
+AOIS_291:125:long_safeDivide(long,long,java.math.RoundingMode):dividend => dividend++
+AOIS_292:125:long_safeDivide(long,long,java.math.RoundingMode):dividend => dividend--
+AOIS_293:125:long_safeDivide(long,long,java.math.RoundingMode):divisor => divisor++
+AOIS_294:125:long_safeDivide(long,long,java.math.RoundingMode):divisor => divisor--
+AOIS_295:127:long_safeDivide(long,long,java.math.RoundingMode):dividend => dividend++
+AOIS_296:127:long_safeDivide(long,long,java.math.RoundingMode):dividend => dividend--
+AOIS_297:128:long_safeDivide(long,long,java.math.RoundingMode):divisor => divisor++
+AOIS_298:128:long_safeDivide(long,long,java.math.RoundingMode):divisor => divisor--
+AOIS_299:127:int_safeToInt(long):Integer.MIN_VALUE => ++Integer.MIN_VALUE
+AOIS_300:127:int_safeToInt(long):Integer.MIN_VALUE => --Integer.MIN_VALUE
+AOIS_301:127:int_safeToInt(long):Integer.MIN_VALUE => Integer.MIN_VALUE++
+AOIS_302:127:int_safeToInt(long):Integer.MIN_VALUE => Integer.MIN_VALUE--
+AOIS_303:134:int_safeToInt(long):value => ++value
+AOIS_304:134:int_safeToInt(long):value => --value
+AOIS_305:134:int_safeToInt(long):value => value++
+AOIS_306:134:int_safeToInt(long):value => value--
+AOIS_307:134:int_safeToInt(long):value => ++value
+AOIS_308:134:int_safeToInt(long):value => --value
+AOIS_309:134:int_safeToInt(long):value => value++
+AOIS_310:134:int_safeToInt(long):value => value--
+AOIS_311:127:int_safeToInt(long):Integer.MAX_VALUE => ++Integer.MAX_VALUE
+AOIS_312:127:int_safeToInt(long):Integer.MAX_VALUE => --Integer.MAX_VALUE
+AOIS_313:127:int_safeToInt(long):Integer.MAX_VALUE => Integer.MAX_VALUE++
+AOIS_314:127:int_safeToInt(long):Integer.MAX_VALUE => Integer.MAX_VALUE--
+AOIS_315:135:int_safeToInt(long):value => value++
+AOIS_316:135:int_safeToInt(long):value => value--
+AOIS_317:137:int_safeToInt(long):value => ++value
+AOIS_318:137:int_safeToInt(long):value => --value
+AOIS_319:137:int_safeToInt(long):value => value++
+AOIS_320:137:int_safeToInt(long):value => value--
+AOIS_321:142:int_safeMultiplyToInt(long,long):val1 => val1++
+AOIS_322:142:int_safeMultiplyToInt(long,long):val1 => val1--
+AOIS_323:142:int_safeMultiplyToInt(long,long):val2 => val2++
+AOIS_324:142:int_safeMultiplyToInt(long,long):val2 => val2--
+AOIS_325:143:int_safeMultiplyToInt(long,long):val => val++
+AOIS_326:143:int_safeMultiplyToInt(long,long):val => val--
+AOIS_327:148:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int):value => ++value
+AOIS_328:148:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int):value => --value
+AOIS_329:148:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int):value => value++
+AOIS_330:148:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int):value => value--
+AOIS_331:148:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int):lowerBound => ++lowerBound
+AOIS_332:148:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int):lowerBound => --lowerBound
+AOIS_333:148:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int):lowerBound => lowerBound++
+AOIS_334:148:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int):lowerBound => lowerBound--
+AOIS_335:148:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int):value => ++value
+AOIS_336:148:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int):value => --value
+AOIS_337:148:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int):value => value++
+AOIS_338:148:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int):value => value--
+AOIS_339:148:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int):upperBound => ++upperBound
+AOIS_340:148:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int):upperBound => --upperBound
+AOIS_341:148:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int):upperBound => upperBound++
+AOIS_342:148:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int):upperBound => upperBound--
+AOIS_343:149:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int):value => value++
+AOIS_344:149:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int):value => value--
+AOIS_345:149:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int):lowerBound => lowerBound++
+AOIS_346:149:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int):lowerBound => lowerBound--
+AOIS_347:149:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int):upperBound => upperBound++
+AOIS_348:149:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int):upperBound => upperBound--
+AOIS_349:155:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):value => ++value
+AOIS_350:155:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):value => --value
+AOIS_351:155:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):value => value++
+AOIS_352:155:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):value => value--
+AOIS_353:155:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):lowerBound => ++lowerBound
+AOIS_354:155:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):lowerBound => --lowerBound
+AOIS_355:155:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):lowerBound => lowerBound++
+AOIS_356:155:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):lowerBound => lowerBound--
+AOIS_357:155:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):value => ++value
+AOIS_358:155:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):value => --value
+AOIS_359:155:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):value => value++
+AOIS_360:155:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):value => value--
+AOIS_361:155:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):upperBound => ++upperBound
+AOIS_362:155:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):upperBound => --upperBound
+AOIS_363:155:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):upperBound => upperBound++
+AOIS_364:155:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):upperBound => upperBound--
+AOIS_365:156:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):value => value++
+AOIS_366:156:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):value => value--
+AOIS_367:156:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):lowerBound => lowerBound++
+AOIS_368:156:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):lowerBound => lowerBound--
+AOIS_369:156:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):upperBound => upperBound++
+AOIS_370:156:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):upperBound => upperBound--
+AOIS_371:162:void_verifyValueBounds(java.lang.String,int,int,int):value => ++value
+AOIS_372:162:void_verifyValueBounds(java.lang.String,int,int,int):value => --value
+AOIS_373:162:void_verifyValueBounds(java.lang.String,int,int,int):value => value++
+AOIS_374:162:void_verifyValueBounds(java.lang.String,int,int,int):value => value--
+AOIS_375:162:void_verifyValueBounds(java.lang.String,int,int,int):lowerBound => ++lowerBound
+AOIS_376:162:void_verifyValueBounds(java.lang.String,int,int,int):lowerBound => --lowerBound
+AOIS_377:162:void_verifyValueBounds(java.lang.String,int,int,int):lowerBound => lowerBound++
+AOIS_378:162:void_verifyValueBounds(java.lang.String,int,int,int):lowerBound => lowerBound--
+AOIS_379:162:void_verifyValueBounds(java.lang.String,int,int,int):value => ++value
+AOIS_380:162:void_verifyValueBounds(java.lang.String,int,int,int):value => --value
+AOIS_381:162:void_verifyValueBounds(java.lang.String,int,int,int):value => value++
+AOIS_382:162:void_verifyValueBounds(java.lang.String,int,int,int):value => value--
+AOIS_383:162:void_verifyValueBounds(java.lang.String,int,int,int):upperBound => ++upperBound
+AOIS_384:162:void_verifyValueBounds(java.lang.String,int,int,int):upperBound => --upperBound
+AOIS_385:162:void_verifyValueBounds(java.lang.String,int,int,int):upperBound => upperBound++
+AOIS_386:162:void_verifyValueBounds(java.lang.String,int,int,int):upperBound => upperBound--
+AOIS_387:163:void_verifyValueBounds(java.lang.String,int,int,int):value => value++
+AOIS_388:163:void_verifyValueBounds(java.lang.String,int,int,int):value => value--
+AOIS_389:163:void_verifyValueBounds(java.lang.String,int,int,int):lowerBound => lowerBound++
+AOIS_390:163:void_verifyValueBounds(java.lang.String,int,int,int):lowerBound => lowerBound--
+AOIS_391:163:void_verifyValueBounds(java.lang.String,int,int,int):upperBound => upperBound++
+AOIS_392:163:void_verifyValueBounds(java.lang.String,int,int,int):upperBound => upperBound--
+AOIS_393:169:int_getWrappedValue(int,int,int,int):currentValue => ++currentValue
+AOIS_394:169:int_getWrappedValue(int,int,int,int):currentValue => --currentValue
+AOIS_395:169:int_getWrappedValue(int,int,int,int):currentValue => currentValue++
+AOIS_396:169:int_getWrappedValue(int,int,int,int):currentValue => currentValue--
+AOIS_397:169:int_getWrappedValue(int,int,int,int):wrapValue => ++wrapValue
+AOIS_398:169:int_getWrappedValue(int,int,int,int):wrapValue => --wrapValue
+AOIS_399:169:int_getWrappedValue(int,int,int,int):wrapValue => wrapValue++
+AOIS_400:169:int_getWrappedValue(int,int,int,int):wrapValue => wrapValue--
+AOIS_401:169:int_getWrappedValue(int,int,int,int):minValue => minValue++
+AOIS_402:169:int_getWrappedValue(int,int,int,int):minValue => minValue--
+AOIS_403:169:int_getWrappedValue(int,int,int,int):maxValue => maxValue++
+AOIS_404:169:int_getWrappedValue(int,int,int,int):maxValue => maxValue--
+AOIS_405:174:int_getWrappedValue(int,int,int):minValue => ++minValue
+AOIS_406:174:int_getWrappedValue(int,int,int):minValue => --minValue
+AOIS_407:174:int_getWrappedValue(int,int,int):minValue => minValue++
+AOIS_408:174:int_getWrappedValue(int,int,int):minValue => minValue--
+AOIS_409:174:int_getWrappedValue(int,int,int):maxValue => ++maxValue
+AOIS_410:174:int_getWrappedValue(int,int,int):maxValue => --maxValue
+AOIS_411:174:int_getWrappedValue(int,int,int):maxValue => maxValue++
+AOIS_412:174:int_getWrappedValue(int,int,int):maxValue => maxValue--
+AOIS_413:177:int_getWrappedValue(int,int,int):maxValue => ++maxValue
+AOIS_414:177:int_getWrappedValue(int,int,int):maxValue => --maxValue
+AOIS_415:177:int_getWrappedValue(int,int,int):maxValue => maxValue++
+AOIS_416:177:int_getWrappedValue(int,int,int):maxValue => maxValue--
+AOIS_417:177:int_getWrappedValue(int,int,int):minValue => ++minValue
+AOIS_418:177:int_getWrappedValue(int,int,int):minValue => --minValue
+AOIS_419:177:int_getWrappedValue(int,int,int):minValue => minValue++
+AOIS_420:177:int_getWrappedValue(int,int,int):minValue => minValue--
+AOIS_421:178:int_getWrappedValue(int,int,int):minValue => ++minValue
+AOIS_422:178:int_getWrappedValue(int,int,int):minValue => --minValue
+AOIS_423:178:int_getWrappedValue(int,int,int):minValue => minValue++
+AOIS_424:178:int_getWrappedValue(int,int,int):minValue => minValue--
+AOIS_425:179:int_getWrappedValue(int,int,int):value => ++value
+AOIS_426:179:int_getWrappedValue(int,int,int):value => --value
+AOIS_427:179:int_getWrappedValue(int,int,int):value => value++
+AOIS_428:179:int_getWrappedValue(int,int,int):value => value--
+AOIS_429:180:int_getWrappedValue(int,int,int):value => ++value
+AOIS_430:180:int_getWrappedValue(int,int,int):value => --value
+AOIS_431:180:int_getWrappedValue(int,int,int):value => value++
+AOIS_432:180:int_getWrappedValue(int,int,int):value => value--
+AOIS_433:180:int_getWrappedValue(int,int,int):wrapRange => ++wrapRange
+AOIS_434:180:int_getWrappedValue(int,int,int):wrapRange => --wrapRange
+AOIS_435:180:int_getWrappedValue(int,int,int):wrapRange => wrapRange++
+AOIS_436:180:int_getWrappedValue(int,int,int):wrapRange => wrapRange--
+AOIS_437:180:int_getWrappedValue(int,int,int):minValue => minValue++
+AOIS_438:180:int_getWrappedValue(int,int,int):minValue => minValue--
+AOIS_439:182:int_getWrappedValue(int,int,int):wrapRange => ++wrapRange
+AOIS_440:182:int_getWrappedValue(int,int,int):wrapRange => --wrapRange
+AOIS_441:182:int_getWrappedValue(int,int,int):wrapRange => wrapRange++
+AOIS_442:182:int_getWrappedValue(int,int,int):wrapRange => wrapRange--
+AOIS_443:183:int_getWrappedValue(int,int,int):remByRange => ++remByRange
+AOIS_444:183:int_getWrappedValue(int,int,int):remByRange => --remByRange
+AOIS_445:183:int_getWrappedValue(int,int,int):remByRange => remByRange++
+AOIS_446:183:int_getWrappedValue(int,int,int):remByRange => remByRange--
+AOIS_447:184:int_getWrappedValue(int,int,int):minValue => ++minValue
+AOIS_448:184:int_getWrappedValue(int,int,int):minValue => --minValue
+AOIS_449:184:int_getWrappedValue(int,int,int):minValue => minValue++
+AOIS_450:184:int_getWrappedValue(int,int,int):minValue => minValue--
+AOIS_451:186:int_getWrappedValue(int,int,int):wrapRange => ++wrapRange
+AOIS_452:186:int_getWrappedValue(int,int,int):wrapRange => --wrapRange
+AOIS_453:186:int_getWrappedValue(int,int,int):wrapRange => wrapRange++
+AOIS_454:186:int_getWrappedValue(int,int,int):wrapRange => wrapRange--
+AOIS_455:186:int_getWrappedValue(int,int,int):remByRange => ++remByRange
+AOIS_456:186:int_getWrappedValue(int,int,int):remByRange => --remByRange
+AOIS_457:186:int_getWrappedValue(int,int,int):remByRange => remByRange++
+AOIS_458:186:int_getWrappedValue(int,int,int):remByRange => remByRange--
+AOIS_459:186:int_getWrappedValue(int,int,int):minValue => minValue++
+AOIS_460:186:int_getWrappedValue(int,int,int):minValue => minValue--
+ROR_1:24:int_safeNegate(int): value == Integer.MIN_VALUE  =>   value > Integer.MIN_VALUE
+ROR_2:24:int_safeNegate(int): value == Integer.MIN_VALUE  =>   value >= Integer.MIN_VALUE
+ROR_3:24:int_safeNegate(int): value == Integer.MIN_VALUE  =>   value < Integer.MIN_VALUE
+ROR_4:24:int_safeNegate(int): value == Integer.MIN_VALUE  =>   value <= Integer.MIN_VALUE
+ROR_5:24:int_safeNegate(int): value == Integer.MIN_VALUE  =>   value != Integer.MIN_VALUE
+ROR_6:24:int_safeNegate(int): value == Integer.MIN_VALUE  =>   true
+ROR_7:24:int_safeNegate(int): value == Integer.MIN_VALUE  =>   false
+ROR_8:33:int_safeAdd(int,int): (val1 ^ sum) < 0  =>   (val1 ^ sum) > 0
+ROR_9:33:int_safeAdd(int,int): (val1 ^ sum) < 0  =>   (val1 ^ sum) >= 0
+ROR_10:33:int_safeAdd(int,int): (val1 ^ sum) < 0  =>   (val1 ^ sum) <= 0
+ROR_11:33:int_safeAdd(int,int): (val1 ^ sum) < 0  =>   (val1 ^ sum) == 0
+ROR_12:33:int_safeAdd(int,int): (val1 ^ sum) < 0  =>   (val1 ^ sum) != 0
+ROR_13:33:int_safeAdd(int,int): (val1 ^ sum) < 0  =>   true
+ROR_14:33:int_safeAdd(int,int): (val1 ^ sum) < 0  =>   false
+ROR_15:33:int_safeAdd(int,int): (val1 ^ val2) >= 0  =>   (val1 ^ val2) > 0
+ROR_16:33:int_safeAdd(int,int): (val1 ^ val2) >= 0  =>   (val1 ^ val2) < 0
+ROR_17:33:int_safeAdd(int,int): (val1 ^ val2) >= 0  =>   (val1 ^ val2) <= 0
+ROR_18:33:int_safeAdd(int,int): (val1 ^ val2) >= 0  =>   (val1 ^ val2) == 0
+ROR_19:33:int_safeAdd(int,int): (val1 ^ val2) >= 0  =>   (val1 ^ val2) != 0
+ROR_20:33:int_safeAdd(int,int): (val1 ^ val2) >= 0  =>   true
+ROR_21:33:int_safeAdd(int,int): (val1 ^ val2) >= 0  =>   false
+ROR_22:42:long_safeAdd(long,long): (val1 ^ sum) < 0  =>   (val1 ^ sum) > 0
+ROR_23:42:long_safeAdd(long,long): (val1 ^ sum) < 0  =>   (val1 ^ sum) >= 0
+ROR_24:42:long_safeAdd(long,long): (val1 ^ sum) < 0  =>   (val1 ^ sum) <= 0
+ROR_25:42:long_safeAdd(long,long): (val1 ^ sum) < 0  =>   (val1 ^ sum) == 0
+ROR_26:42:long_safeAdd(long,long): (val1 ^ sum) < 0  =>   (val1 ^ sum) != 0
+ROR_27:42:long_safeAdd(long,long): (val1 ^ sum) < 0  =>   true
+ROR_28:42:long_safeAdd(long,long): (val1 ^ sum) < 0  =>   false
+ROR_29:42:long_safeAdd(long,long): (val1 ^ val2) >= 0  =>   (val1 ^ val2) > 0
+ROR_30:42:long_safeAdd(long,long): (val1 ^ val2) >= 0  =>   (val1 ^ val2) < 0
+ROR_31:42:long_safeAdd(long,long): (val1 ^ val2) >= 0  =>   (val1 ^ val2) <= 0
+ROR_32:42:long_safeAdd(long,long): (val1 ^ val2) >= 0  =>   (val1 ^ val2) == 0
+ROR_33:42:long_safeAdd(long,long): (val1 ^ val2) >= 0  =>   (val1 ^ val2) != 0
+ROR_34:42:long_safeAdd(long,long): (val1 ^ val2) >= 0  =>   true
+ROR_35:42:long_safeAdd(long,long): (val1 ^ val2) >= 0  =>   false
+ROR_36:51:long_safeSubtract(long,long): (val1 ^ diff) < 0  =>   (val1 ^ diff) > 0
+ROR_37:51:long_safeSubtract(long,long): (val1 ^ diff) < 0  =>   (val1 ^ diff) >= 0
+ROR_38:51:long_safeSubtract(long,long): (val1 ^ diff) < 0  =>   (val1 ^ diff) <= 0
+ROR_39:51:long_safeSubtract(long,long): (val1 ^ diff) < 0  =>   (val1 ^ diff) == 0
+ROR_40:51:long_safeSubtract(long,long): (val1 ^ diff) < 0  =>   (val1 ^ diff) != 0
+ROR_41:51:long_safeSubtract(long,long): (val1 ^ diff) < 0  =>   true
+ROR_42:51:long_safeSubtract(long,long): (val1 ^ diff) < 0  =>   false
+ROR_43:51:long_safeSubtract(long,long): (val1 ^ val2) < 0  =>   (val1 ^ val2) > 0
+ROR_44:51:long_safeSubtract(long,long): (val1 ^ val2) < 0  =>   (val1 ^ val2) >= 0
+ROR_45:51:long_safeSubtract(long,long): (val1 ^ val2) < 0  =>   (val1 ^ val2) <= 0
+ROR_46:51:long_safeSubtract(long,long): (val1 ^ val2) < 0  =>   (val1 ^ val2) == 0
+ROR_47:51:long_safeSubtract(long,long): (val1 ^ val2) < 0  =>   (val1 ^ val2) != 0
+ROR_48:51:long_safeSubtract(long,long): (val1 ^ val2) < 0  =>   true
+ROR_49:51:long_safeSubtract(long,long): (val1 ^ val2) < 0  =>   false
+ROR_50:60:int_safeMultiply(int,int): total < Integer.MIN_VALUE  =>   total > Integer.MIN_VALUE
+ROR_51:60:int_safeMultiply(int,int): total < Integer.MIN_VALUE  =>   total >= Integer.MIN_VALUE
+ROR_52:60:int_safeMultiply(int,int): total < Integer.MIN_VALUE  =>   total <= Integer.MIN_VALUE
+ROR_53:60:int_safeMultiply(int,int): total < Integer.MIN_VALUE  =>   total == Integer.MIN_VALUE
+ROR_54:60:int_safeMultiply(int,int): total < Integer.MIN_VALUE  =>   total != Integer.MIN_VALUE
+ROR_55:60:int_safeMultiply(int,int): total < Integer.MIN_VALUE  =>   true
+ROR_56:60:int_safeMultiply(int,int): total < Integer.MIN_VALUE  =>   false
+ROR_57:60:int_safeMultiply(int,int): total > Integer.MAX_VALUE  =>   total >= Integer.MAX_VALUE
+ROR_58:60:int_safeMultiply(int,int): total > Integer.MAX_VALUE  =>   total < Integer.MAX_VALUE
+ROR_59:60:int_safeMultiply(int,int): total > Integer.MAX_VALUE  =>   total <= Integer.MAX_VALUE
+ROR_60:60:int_safeMultiply(int,int): total > Integer.MAX_VALUE  =>   total == Integer.MAX_VALUE
+ROR_61:60:int_safeMultiply(int,int): total > Integer.MAX_VALUE  =>   total != Integer.MAX_VALUE
+ROR_62:60:int_safeMultiply(int,int): total > Integer.MAX_VALUE  =>   true
+ROR_63:60:int_safeMultiply(int,int): total > Integer.MAX_VALUE  =>   false
+ROR_64:70:long_safeMultiply(long,int): val1 == Long.MIN_VALUE  =>   val1 > Long.MIN_VALUE
+ROR_65:70:long_safeMultiply(long,int): val1 == Long.MIN_VALUE  =>   val1 >= Long.MIN_VALUE
+ROR_66:70:long_safeMultiply(long,int): val1 == Long.MIN_VALUE  =>   val1 < Long.MIN_VALUE
+ROR_67:70:long_safeMultiply(long,int): val1 == Long.MIN_VALUE  =>   val1 <= Long.MIN_VALUE
+ROR_68:70:long_safeMultiply(long,int): val1 == Long.MIN_VALUE  =>   val1 != Long.MIN_VALUE
+ROR_69:70:long_safeMultiply(long,int): val1 == Long.MIN_VALUE  =>   true
+ROR_70:70:long_safeMultiply(long,int): val1 == Long.MIN_VALUE  =>   false
+ROR_71:83:long_safeMultiply(long,int): total / val2 != val1  =>   total / val2 > val1
+ROR_72:83:long_safeMultiply(long,int): total / val2 != val1  =>   total / val2 >= val1
+ROR_73:83:long_safeMultiply(long,int): total / val2 != val1  =>   total / val2 < val1
+ROR_74:83:long_safeMultiply(long,int): total / val2 != val1  =>   total / val2 <= val1
+ROR_75:83:long_safeMultiply(long,int): total / val2 != val1  =>   total / val2 == val1
+ROR_76:83:long_safeMultiply(long,int): total / val2 != val1  =>   true
+ROR_77:83:long_safeMultiply(long,int): total / val2 != val1  =>   false
+ROR_78:91:long_safeMultiply(long,long): val2 == 1  =>   val2 > 1
+ROR_79:91:long_safeMultiply(long,long): val2 == 1  =>   val2 >= 1
+ROR_80:91:long_safeMultiply(long,long): val2 == 1  =>   val2 < 1
+ROR_81:91:long_safeMultiply(long,long): val2 == 1  =>   val2 <= 1
+ROR_82:91:long_safeMultiply(long,long): val2 == 1  =>   val2 != 1
+ROR_83:91:long_safeMultiply(long,long): val2 == 1  =>   true
+ROR_84:91:long_safeMultiply(long,long): val2 == 1  =>   false
+ROR_85:94:long_safeMultiply(long,long): val1 == 1  =>   val1 > 1
+ROR_86:94:long_safeMultiply(long,long): val1 == 1  =>   val1 >= 1
+ROR_87:94:long_safeMultiply(long,long): val1 == 1  =>   val1 < 1
+ROR_88:94:long_safeMultiply(long,long): val1 == 1  =>   val1 <= 1
+ROR_89:94:long_safeMultiply(long,long): val1 == 1  =>   val1 != 1
+ROR_90:94:long_safeMultiply(long,long): val1 == 1  =>   true
+ROR_91:94:long_safeMultiply(long,long): val1 == 1  =>   false
+ROR_92:97:long_safeMultiply(long,long): val1 == 0  =>   val1 > 0
+ROR_93:97:long_safeMultiply(long,long): val1 == 0  =>   val1 >= 0
+ROR_94:97:long_safeMultiply(long,long): val1 == 0  =>   val1 < 0
+ROR_95:97:long_safeMultiply(long,long): val1 == 0  =>   val1 <= 0
+ROR_96:97:long_safeMultiply(long,long): val1 == 0  =>   val1 != 0
+ROR_97:97:long_safeMultiply(long,long): val1 == 0  =>   true
+ROR_98:97:long_safeMultiply(long,long): val1 == 0  =>   false
+ROR_99:97:long_safeMultiply(long,long): val2 == 0  =>   val2 > 0
+ROR_100:97:long_safeMultiply(long,long): val2 == 0  =>   val2 >= 0
+ROR_101:97:long_safeMultiply(long,long): val2 == 0  =>   val2 < 0
+ROR_102:97:long_safeMultiply(long,long): val2 == 0  =>   val2 <= 0
+ROR_103:97:long_safeMultiply(long,long): val2 == 0  =>   val2 != 0
+ROR_104:97:long_safeMultiply(long,long): val2 == 0  =>   true
+ROR_105:97:long_safeMultiply(long,long): val2 == 0  =>   false
+ROR_106:101:long_safeMultiply(long,long): total / val2 != val1  =>   total / val2 > val1
+ROR_107:101:long_safeMultiply(long,long): total / val2 != val1  =>   total / val2 >= val1
+ROR_108:101:long_safeMultiply(long,long): total / val2 != val1  =>   total / val2 < val1
+ROR_109:101:long_safeMultiply(long,long): total / val2 != val1  =>   total / val2 <= val1
+ROR_110:101:long_safeMultiply(long,long): total / val2 != val1  =>   total / val2 == val1
+ROR_111:101:long_safeMultiply(long,long): total / val2 != val1  =>   true
+ROR_112:101:long_safeMultiply(long,long): total / val2 != val1  =>   false
+ROR_113:101:long_safeMultiply(long,long): val1 == Long.MIN_VALUE  =>   val1 > Long.MIN_VALUE
+ROR_114:101:long_safeMultiply(long,long): val1 == Long.MIN_VALUE  =>   val1 >= Long.MIN_VALUE
+ROR_115:101:long_safeMultiply(long,long): val1 == Long.MIN_VALUE  =>   val1 < Long.MIN_VALUE
+ROR_116:101:long_safeMultiply(long,long): val1 == Long.MIN_VALUE  =>   val1 <= Long.MIN_VALUE
+ROR_117:101:long_safeMultiply(long,long): val1 == Long.MIN_VALUE  =>   val1 != Long.MIN_VALUE
+ROR_118:101:long_safeMultiply(long,long): val1 == Long.MIN_VALUE  =>   true
+ROR_119:101:long_safeMultiply(long,long): val1 == Long.MIN_VALUE  =>   false
+ROR_120:101:long_safeMultiply(long,long): val2 == -1  =>   val2 > -1
+ROR_121:101:long_safeMultiply(long,long): val2 == -1  =>   val2 >= -1
+ROR_122:101:long_safeMultiply(long,long): val2 == -1  =>   val2 < -1
+ROR_123:101:long_safeMultiply(long,long): val2 == -1  =>   val2 <= -1
+ROR_124:101:long_safeMultiply(long,long): val2 == -1  =>   val2 != -1
+ROR_125:101:long_safeMultiply(long,long): val2 == -1  =>   true
+ROR_126:101:long_safeMultiply(long,long): val2 == -1  =>   false
+ROR_127:101:long_safeMultiply(long,long): val2 == Long.MIN_VALUE  =>   val2 > Long.MIN_VALUE
+ROR_128:101:long_safeMultiply(long,long): val2 == Long.MIN_VALUE  =>   val2 >= Long.MIN_VALUE
+ROR_129:101:long_safeMultiply(long,long): val2 == Long.MIN_VALUE  =>   val2 < Long.MIN_VALUE
+ROR_130:101:long_safeMultiply(long,long): val2 == Long.MIN_VALUE  =>   val2 <= Long.MIN_VALUE
+ROR_131:101:long_safeMultiply(long,long): val2 == Long.MIN_VALUE  =>   val2 != Long.MIN_VALUE
+ROR_132:101:long_safeMultiply(long,long): val2 == Long.MIN_VALUE  =>   true
+ROR_133:101:long_safeMultiply(long,long): val2 == Long.MIN_VALUE  =>   false
+ROR_134:101:long_safeMultiply(long,long): val1 == -1  =>   val1 > -1
+ROR_135:101:long_safeMultiply(long,long): val1 == -1  =>   val1 >= -1
+ROR_136:101:long_safeMultiply(long,long): val1 == -1  =>   val1 < -1
+ROR_137:101:long_safeMultiply(long,long): val1 == -1  =>   val1 <= -1
+ROR_138:101:long_safeMultiply(long,long): val1 == -1  =>   val1 != -1
+ROR_139:101:long_safeMultiply(long,long): val1 == -1  =>   true
+ROR_140:101:long_safeMultiply(long,long): val1 == -1  =>   false
+ROR_141:109:long_safeDivide(long,long): dividend == Long.MIN_VALUE  =>   dividend > Long.MIN_VALUE
+ROR_142:109:long_safeDivide(long,long): dividend == Long.MIN_VALUE  =>   dividend >= Long.MIN_VALUE
+ROR_143:109:long_safeDivide(long,long): dividend == Long.MIN_VALUE  =>   dividend < Long.MIN_VALUE
+ROR_144:109:long_safeDivide(long,long): dividend == Long.MIN_VALUE  =>   dividend <= Long.MIN_VALUE
+ROR_145:109:long_safeDivide(long,long): dividend == Long.MIN_VALUE  =>   dividend != Long.MIN_VALUE
+ROR_146:109:long_safeDivide(long,long): dividend == Long.MIN_VALUE  =>   true
+ROR_147:109:long_safeDivide(long,long): dividend == Long.MIN_VALUE  =>   false
+ROR_148:109:long_safeDivide(long,long): divisor == -1L  =>   divisor > -1L
+ROR_149:109:long_safeDivide(long,long): divisor == -1L  =>   divisor >= -1L
+ROR_150:109:long_safeDivide(long,long): divisor == -1L  =>   divisor < -1L
+ROR_151:109:long_safeDivide(long,long): divisor == -1L  =>   divisor <= -1L
+ROR_152:109:long_safeDivide(long,long): divisor == -1L  =>   divisor != -1L
+ROR_153:109:long_safeDivide(long,long): divisor == -1L  =>   true
+ROR_154:109:long_safeDivide(long,long): divisor == -1L  =>   false
+ROR_155:117:long_safeDivide(long,long,java.math.RoundingMode): dividend == Long.MIN_VALUE  =>   dividend > Long.MIN_VALUE
+ROR_156:117:long_safeDivide(long,long,java.math.RoundingMode): dividend == Long.MIN_VALUE  =>   dividend >= Long.MIN_VALUE
+ROR_157:117:long_safeDivide(long,long,java.math.RoundingMode): dividend == Long.MIN_VALUE  =>   dividend < Long.MIN_VALUE
+ROR_158:117:long_safeDivide(long,long,java.math.RoundingMode): dividend == Long.MIN_VALUE  =>   dividend <= Long.MIN_VALUE
+ROR_159:117:long_safeDivide(long,long,java.math.RoundingMode): dividend == Long.MIN_VALUE  =>   dividend != Long.MIN_VALUE
+ROR_160:117:long_safeDivide(long,long,java.math.RoundingMode): dividend == Long.MIN_VALUE  =>   true
+ROR_161:117:long_safeDivide(long,long,java.math.RoundingMode): dividend == Long.MIN_VALUE  =>   false
+ROR_162:117:long_safeDivide(long,long,java.math.RoundingMode): divisor == -1L  =>   divisor > -1L
+ROR_163:117:long_safeDivide(long,long,java.math.RoundingMode): divisor == -1L  =>   divisor >= -1L
+ROR_164:117:long_safeDivide(long,long,java.math.RoundingMode): divisor == -1L  =>   divisor < -1L
+ROR_165:117:long_safeDivide(long,long,java.math.RoundingMode): divisor == -1L  =>   divisor <= -1L
+ROR_166:117:long_safeDivide(long,long,java.math.RoundingMode): divisor == -1L  =>   divisor != -1L
+ROR_167:117:long_safeDivide(long,long,java.math.RoundingMode): divisor == -1L  =>   true
+ROR_168:117:long_safeDivide(long,long,java.math.RoundingMode): divisor == -1L  =>   false
+ROR_169:127:int_safeToInt(long): Integer.MIN_VALUE <= value  =>   Integer.MIN_VALUE > value
+ROR_170:127:int_safeToInt(long): Integer.MIN_VALUE <= value  =>   Integer.MIN_VALUE >= value
+ROR_171:127:int_safeToInt(long): Integer.MIN_VALUE <= value  =>   Integer.MIN_VALUE < value
+ROR_172:127:int_safeToInt(long): Integer.MIN_VALUE <= value  =>   Integer.MIN_VALUE == value
+ROR_173:127:int_safeToInt(long): Integer.MIN_VALUE <= value  =>   Integer.MIN_VALUE != value
+ROR_174:127:int_safeToInt(long): Integer.MIN_VALUE <= value  =>   true
+ROR_175:127:int_safeToInt(long): Integer.MIN_VALUE <= value  =>   false
+ROR_176:127:int_safeToInt(long): value <= Integer.MAX_VALUE  =>   value > Integer.MAX_VALUE
+ROR_177:127:int_safeToInt(long): value <= Integer.MAX_VALUE  =>   value >= Integer.MAX_VALUE
+ROR_178:127:int_safeToInt(long): value <= Integer.MAX_VALUE  =>   value < Integer.MAX_VALUE
+ROR_179:127:int_safeToInt(long): value <= Integer.MAX_VALUE  =>   value == Integer.MAX_VALUE
+ROR_180:127:int_safeToInt(long): value <= Integer.MAX_VALUE  =>   value != Integer.MAX_VALUE
+ROR_181:127:int_safeToInt(long): value <= Integer.MAX_VALUE  =>   true
+ROR_182:127:int_safeToInt(long): value <= Integer.MAX_VALUE  =>   false
+ROR_183:141:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int): value < lowerBound  =>   value > lowerBound
+ROR_184:141:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int): value < lowerBound  =>   value >= lowerBound
+ROR_185:141:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int): value < lowerBound  =>   value <= lowerBound
+ROR_186:141:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int): value < lowerBound  =>   value == lowerBound
+ROR_187:141:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int): value < lowerBound  =>   value != lowerBound
+ROR_188:141:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int): value < lowerBound  =>   true
+ROR_189:141:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int): value < lowerBound  =>   false
+ROR_190:141:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int): value > upperBound  =>   value >= upperBound
+ROR_191:141:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int): value > upperBound  =>   value < upperBound
+ROR_192:141:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int): value > upperBound  =>   value <= upperBound
+ROR_193:141:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int): value > upperBound  =>   value == upperBound
+ROR_194:141:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int): value > upperBound  =>   value != upperBound
+ROR_195:141:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int): value > upperBound  =>   true
+ROR_196:141:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int): value > upperBound  =>   false
+ROR_197:148:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int): value < lowerBound  =>   value > lowerBound
+ROR_198:148:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int): value < lowerBound  =>   value >= lowerBound
+ROR_199:148:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int): value < lowerBound  =>   value <= lowerBound
+ROR_200:148:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int): value < lowerBound  =>   value == lowerBound
+ROR_201:148:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int): value < lowerBound  =>   value != lowerBound
+ROR_202:148:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int): value < lowerBound  =>   true
+ROR_203:148:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int): value < lowerBound  =>   false
+ROR_204:148:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int): value > upperBound  =>   value >= upperBound
+ROR_205:148:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int): value > upperBound  =>   value < upperBound
+ROR_206:148:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int): value > upperBound  =>   value <= upperBound
+ROR_207:148:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int): value > upperBound  =>   value == upperBound
+ROR_208:148:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int): value > upperBound  =>   value != upperBound
+ROR_209:148:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int): value > upperBound  =>   true
+ROR_210:148:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int): value > upperBound  =>   false
+ROR_211:155:void_verifyValueBounds(java.lang.String,int,int,int): value < lowerBound  =>   value > lowerBound
+ROR_212:155:void_verifyValueBounds(java.lang.String,int,int,int): value < lowerBound  =>   value >= lowerBound
+ROR_213:155:void_verifyValueBounds(java.lang.String,int,int,int): value < lowerBound  =>   value <= lowerBound
+ROR_214:155:void_verifyValueBounds(java.lang.String,int,int,int): value < lowerBound  =>   value == lowerBound
+ROR_215:155:void_verifyValueBounds(java.lang.String,int,int,int): value < lowerBound  =>   value != lowerBound
+ROR_216:155:void_verifyValueBounds(java.lang.String,int,int,int): value < lowerBound  =>   true
+ROR_217:155:void_verifyValueBounds(java.lang.String,int,int,int): value < lowerBound  =>   false
+ROR_218:155:void_verifyValueBounds(java.lang.String,int,int,int): value > upperBound  =>   value >= upperBound
+ROR_219:155:void_verifyValueBounds(java.lang.String,int,int,int): value > upperBound  =>   value < upperBound
+ROR_220:155:void_verifyValueBounds(java.lang.String,int,int,int): value > upperBound  =>   value <= upperBound
+ROR_221:155:void_verifyValueBounds(java.lang.String,int,int,int): value > upperBound  =>   value == upperBound
+ROR_222:155:void_verifyValueBounds(java.lang.String,int,int,int): value > upperBound  =>   value != upperBound
+ROR_223:155:void_verifyValueBounds(java.lang.String,int,int,int): value > upperBound  =>   true
+ROR_224:155:void_verifyValueBounds(java.lang.String,int,int,int): value > upperBound  =>   false
+ROR_225:167:int_getWrappedValue(int,int,int): minValue >= maxValue  =>   minValue > maxValue
+ROR_226:167:int_getWrappedValue(int,int,int): minValue >= maxValue  =>   minValue < maxValue
+ROR_227:167:int_getWrappedValue(int,int,int): minValue >= maxValue  =>   minValue <= maxValue
+ROR_228:167:int_getWrappedValue(int,int,int): minValue >= maxValue  =>   minValue == maxValue
+ROR_229:167:int_getWrappedValue(int,int,int): minValue >= maxValue  =>   minValue != maxValue
+ROR_230:167:int_getWrappedValue(int,int,int): minValue >= maxValue  =>   true
+ROR_231:167:int_getWrappedValue(int,int,int): minValue >= maxValue  =>   false
+ROR_232:172:int_getWrappedValue(int,int,int): value >= 0  =>   value > 0
+ROR_233:172:int_getWrappedValue(int,int,int): value >= 0  =>   value < 0
+ROR_234:172:int_getWrappedValue(int,int,int): value >= 0  =>   value <= 0
+ROR_235:172:int_getWrappedValue(int,int,int): value >= 0  =>   value == 0
+ROR_236:172:int_getWrappedValue(int,int,int): value >= 0  =>   value != 0
+ROR_237:172:int_getWrappedValue(int,int,int): value >= 0  =>   true
+ROR_238:172:int_getWrappedValue(int,int,int): value >= 0  =>   false
+ROR_239:176:int_getWrappedValue(int,int,int): remByRange == 0  =>   remByRange > 0
+ROR_240:176:int_getWrappedValue(int,int,int): remByRange == 0  =>   remByRange >= 0
+ROR_241:176:int_getWrappedValue(int,int,int): remByRange == 0  =>   remByRange < 0
+ROR_242:176:int_getWrappedValue(int,int,int): remByRange == 0  =>   remByRange <= 0
+ROR_243:176:int_getWrappedValue(int,int,int): remByRange == 0  =>   remByRange != 0
+ROR_244:176:int_getWrappedValue(int,int,int): remByRange == 0  =>   true
+ROR_245:176:int_getWrappedValue(int,int,int): remByRange == 0  =>   false
+ROR_246:184:boolean_equals(java.lang.Object,java.lang.Object): object1 == object2  =>   object1 != object2
+ROR_247:187:boolean_equals(java.lang.Object,java.lang.Object): object1 == null  =>   object1 != null
+ROR_248:187:boolean_equals(java.lang.Object,java.lang.Object): object2 == null  =>   object2 != null
+COR_1:33:int_safeAdd(int,int): (val1 ^ sum) < 0 && (val1 ^ val2) >= 0  =>   (val1 ^ sum) < 0 || (val1 ^ val2) >= 0
+COR_2:33:int_safeAdd(int,int): (val1 ^ sum) < 0 && (val1 ^ val2) >= 0  =>   (val1 ^ sum) < 0 ^ (val1 ^ val2) >= 0
+COR_3:42:long_safeAdd(long,long): (val1 ^ sum) < 0 && (val1 ^ val2) >= 0  =>   (val1 ^ sum) < 0 || (val1 ^ val2) >= 0
+COR_4:42:long_safeAdd(long,long): (val1 ^ sum) < 0 && (val1 ^ val2) >= 0  =>   (val1 ^ sum) < 0 ^ (val1 ^ val2) >= 0
+COR_5:51:long_safeSubtract(long,long): (val1 ^ diff) < 0 && (val1 ^ val2) < 0  =>   (val1 ^ diff) < 0 || (val1 ^ val2) < 0
+COR_6:51:long_safeSubtract(long,long): (val1 ^ diff) < 0 && (val1 ^ val2) < 0  =>   (val1 ^ diff) < 0 ^ (val1 ^ val2) < 0
+COR_7:60:int_safeMultiply(int,int): total < Integer.MIN_VALUE || total > Integer.MAX_VALUE  =>   total < Integer.MIN_VALUE && total > Integer.MAX_VALUE
+COR_8:60:int_safeMultiply(int,int): total < Integer.MIN_VALUE || total > Integer.MAX_VALUE  =>   total < Integer.MIN_VALUE ^ total > Integer.MAX_VALUE
+COR_9:97:long_safeMultiply(long,long): val1 == 0 || val2 == 0  =>   val1 == 0 && val2 == 0
+COR_10:97:long_safeMultiply(long,long): val1 == 0 || val2 == 0  =>   val1 == 0 ^ val2 == 0
+COR_11:101:long_safeMultiply(long,long): val1 == Long.MIN_VALUE && val2 == -1  =>   val1 == Long.MIN_VALUE || val2 == -1
+COR_12:101:long_safeMultiply(long,long): val1 == Long.MIN_VALUE && val2 == -1  =>   val1 == Long.MIN_VALUE ^ val2 == -1
+COR_13:101:long_safeMultiply(long,long): total / val2 != val1 || val1 == Long.MIN_VALUE && val2 == -1  =>   total / val2 != val1 && (val1 == Long.MIN_VALUE && val2 == -1)
+COR_14:101:long_safeMultiply(long,long): total / val2 != val1 || val1 == Long.MIN_VALUE && val2 == -1  =>   total / val2 != val1 ^ (val1 == Long.MIN_VALUE && val2 == -1)
+COR_15:101:long_safeMultiply(long,long): val2 == Long.MIN_VALUE && val1 == -1  =>   val2 == Long.MIN_VALUE || val1 == -1
+COR_16:101:long_safeMultiply(long,long): val2 == Long.MIN_VALUE && val1 == -1  =>   val2 == Long.MIN_VALUE ^ val1 == -1
+COR_17:101:long_safeMultiply(long,long): total / val2 != val1 || val1 == Long.MIN_VALUE && val2 == -1 || val2 == Long.MIN_VALUE && val1 == -1  =>   (total / val2 != val1 || val1 == Long.MIN_VALUE && val2 == -1) && (val2 == Long.MIN_VALUE && val1 == -1)
+COR_18:101:long_safeMultiply(long,long): total / val2 != val1 || val1 == Long.MIN_VALUE && val2 == -1 || val2 == Long.MIN_VALUE && val1 == -1  =>   (total / val2 != val1 || val1 == Long.MIN_VALUE && val2 == -1) ^ (val2 == Long.MIN_VALUE && val1 == -1)
+COR_19:109:long_safeDivide(long,long): dividend == Long.MIN_VALUE && divisor == -1L  =>   dividend == Long.MIN_VALUE || divisor == -1L
+COR_20:109:long_safeDivide(long,long): dividend == Long.MIN_VALUE && divisor == -1L  =>   dividend == Long.MIN_VALUE ^ divisor == -1L
+COR_21:117:long_safeDivide(long,long,java.math.RoundingMode): dividend == Long.MIN_VALUE && divisor == -1L  =>   dividend == Long.MIN_VALUE || divisor == -1L
+COR_22:117:long_safeDivide(long,long,java.math.RoundingMode): dividend == Long.MIN_VALUE && divisor == -1L  =>   dividend == Long.MIN_VALUE ^ divisor == -1L
+COR_23:127:int_safeToInt(long): Integer.MIN_VALUE <= value && value <= Integer.MAX_VALUE  =>   Integer.MIN_VALUE <= value || value <= Integer.MAX_VALUE
+COR_24:127:int_safeToInt(long): Integer.MIN_VALUE <= value && value <= Integer.MAX_VALUE  =>   Integer.MIN_VALUE <= value ^ value <= Integer.MAX_VALUE
+COR_25:141:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int): value < lowerBound || value > upperBound  =>   value < lowerBound && value > upperBound
+COR_26:141:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int): value < lowerBound || value > upperBound  =>   value < lowerBound ^ value > upperBound
+COR_27:148:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int): value < lowerBound || value > upperBound  =>   value < lowerBound && value > upperBound
+COR_28:148:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int): value < lowerBound || value > upperBound  =>   value < lowerBound ^ value > upperBound
+COR_29:155:void_verifyValueBounds(java.lang.String,int,int,int): value < lowerBound || value > upperBound  =>   value < lowerBound && value > upperBound
+COR_30:155:void_verifyValueBounds(java.lang.String,int,int,int): value < lowerBound || value > upperBound  =>   value < lowerBound ^ value > upperBound
+COR_31:187:boolean_equals(java.lang.Object,java.lang.Object): object1 == null || object2 == null  =>   object1 == null && object2 == null
+COR_32:187:boolean_equals(java.lang.Object,java.lang.Object): object1 == null || object2 == null  =>   object1 == null ^ object2 == null
+COI_1:24:int_safeNegate(int): value == Integer.MIN_VALUE  =>  !(value == Integer.MIN_VALUE)
+COI_2:33:int_safeAdd(int,int): (val1 ^ sum) < 0  =>  !((val1 ^ sum) < 0)
+COI_3:33:int_safeAdd(int,int): (val1 ^ val2) >= 0  =>  !((val1 ^ val2) >= 0)
+COI_4:33:int_safeAdd(int,int): (val1 ^ sum) < 0 && (val1 ^ val2) >= 0  =>  !((val1 ^ sum) < 0 && (val1 ^ val2) >= 0)
+COI_5:42:long_safeAdd(long,long): (val1 ^ sum) < 0  =>  !((val1 ^ sum) < 0)
+COI_6:42:long_safeAdd(long,long): (val1 ^ val2) >= 0  =>  !((val1 ^ val2) >= 0)
+COI_7:42:long_safeAdd(long,long): (val1 ^ sum) < 0 && (val1 ^ val2) >= 0  =>  !((val1 ^ sum) < 0 && (val1 ^ val2) >= 0)
+COI_8:51:long_safeSubtract(long,long): (val1 ^ diff) < 0  =>  !((val1 ^ diff) < 0)
+COI_9:51:long_safeSubtract(long,long): (val1 ^ val2) < 0  =>  !((val1 ^ val2) < 0)
+COI_10:51:long_safeSubtract(long,long): (val1 ^ diff) < 0 && (val1 ^ val2) < 0  =>  !((val1 ^ diff) < 0 && (val1 ^ val2) < 0)
+COI_11:60:int_safeMultiply(int,int): total < Integer.MIN_VALUE  =>  !(total < Integer.MIN_VALUE)
+COI_12:60:int_safeMultiply(int,int): total > Integer.MAX_VALUE  =>  !(total > Integer.MAX_VALUE)
+COI_13:60:int_safeMultiply(int,int): total < Integer.MIN_VALUE || total > Integer.MAX_VALUE  =>  !(total < Integer.MIN_VALUE || total > Integer.MAX_VALUE)
+COI_14:70:long_safeMultiply(long,int): val1 == Long.MIN_VALUE  =>  !(val1 == Long.MIN_VALUE)
+COI_15:83:long_safeMultiply(long,int): total / val2 != val1  =>  !(total / val2 != val1)
+COI_16:91:long_safeMultiply(long,long): val2 == 1  =>  !(val2 == 1)
+COI_17:94:long_safeMultiply(long,long): val1 == 1  =>  !(val1 == 1)
+COI_18:97:long_safeMultiply(long,long): val1 == 0  =>  !(val1 == 0)
+COI_19:97:long_safeMultiply(long,long): val2 == 0  =>  !(val2 == 0)
+COI_20:97:long_safeMultiply(long,long): val1 == 0 || val2 == 0  =>  !(val1 == 0 || val2 == 0)
+COI_21:101:long_safeMultiply(long,long): total / val2 != val1  =>  !(total / val2 != val1)
+COI_22:101:long_safeMultiply(long,long): val1 == Long.MIN_VALUE  =>  !(val1 == Long.MIN_VALUE)
+COI_23:101:long_safeMultiply(long,long): val2 == -1  =>  !(val2 == -1)
+COI_24:101:long_safeMultiply(long,long): val1 == Long.MIN_VALUE && val2 == -1  =>  !(val1 == Long.MIN_VALUE && val2 == -1)
+COI_25:101:long_safeMultiply(long,long): total / val2 != val1 || val1 == Long.MIN_VALUE && val2 == -1  =>  !(total / val2 != val1 || val1 == Long.MIN_VALUE && val2 == -1)
+COI_26:101:long_safeMultiply(long,long): val2 == Long.MIN_VALUE  =>  !(val2 == Long.MIN_VALUE)
+COI_27:101:long_safeMultiply(long,long): val1 == -1  =>  !(val1 == -1)
+COI_28:101:long_safeMultiply(long,long): val2 == Long.MIN_VALUE && val1 == -1  =>  !(val2 == Long.MIN_VALUE && val1 == -1)
+COI_29:101:long_safeMultiply(long,long): total / val2 != val1 || val1 == Long.MIN_VALUE && val2 == -1 || val2 == Long.MIN_VALUE && val1 == -1  =>  !(total / val2 != val1 || val1 == Long.MIN_VALUE && val2 == -1 || val2 == Long.MIN_VALUE && val1 == -1)
+COI_30:109:long_safeDivide(long,long): dividend == Long.MIN_VALUE  =>  !(dividend == Long.MIN_VALUE)
+COI_31:109:long_safeDivide(long,long): divisor == -1L  =>  !(divisor == -1L)
+COI_32:109:long_safeDivide(long,long): dividend == Long.MIN_VALUE && divisor == -1L  =>  !(dividend == Long.MIN_VALUE && divisor == -1L)
+COI_33:117:long_safeDivide(long,long,java.math.RoundingMode): dividend == Long.MIN_VALUE  =>  !(dividend == Long.MIN_VALUE)
+COI_34:117:long_safeDivide(long,long,java.math.RoundingMode): divisor == -1L  =>  !(divisor == -1L)
+COI_35:117:long_safeDivide(long,long,java.math.RoundingMode): dividend == Long.MIN_VALUE && divisor == -1L  =>  !(dividend == Long.MIN_VALUE && divisor == -1L)
+COI_36:127:int_safeToInt(long): Integer.MIN_VALUE <= value  =>  !(Integer.MIN_VALUE <= value)
+COI_37:127:int_safeToInt(long): value <= Integer.MAX_VALUE  =>  !(value <= Integer.MAX_VALUE)
+COI_38:127:int_safeToInt(long): Integer.MIN_VALUE <= value && value <= Integer.MAX_VALUE  =>  !(Integer.MIN_VALUE <= value && value <= Integer.MAX_VALUE)
+COI_39:141:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int): value < lowerBound  =>  !(value < lowerBound)
+COI_40:141:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int): value > upperBound  =>  !(value > upperBound)
+COI_41:141:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int): value < lowerBound || value > upperBound  =>  !(value < lowerBound || value > upperBound)
+COI_42:148:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int): value < lowerBound  =>  !(value < lowerBound)
+COI_43:148:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int): value > upperBound  =>  !(value > upperBound)
+COI_44:148:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int): value < lowerBound || value > upperBound  =>  !(value < lowerBound || value > upperBound)
+COI_45:155:void_verifyValueBounds(java.lang.String,int,int,int): value < lowerBound  =>  !(value < lowerBound)
+COI_46:155:void_verifyValueBounds(java.lang.String,int,int,int): value > upperBound  =>  !(value > upperBound)
+COI_47:155:void_verifyValueBounds(java.lang.String,int,int,int): value < lowerBound || value > upperBound  =>  !(value < lowerBound || value > upperBound)
+COI_48:167:int_getWrappedValue(int,int,int): minValue >= maxValue  =>  !(minValue >= maxValue)
+COI_49:172:int_getWrappedValue(int,int,int): value >= 0  =>  !(value >= 0)
+COI_50:176:int_getWrappedValue(int,int,int): remByRange == 0  =>  !(remByRange == 0)
+COI_51:184:boolean_equals(java.lang.Object,java.lang.Object): object1 == object2  =>  !(object1 == object2)
+COI_52:187:boolean_equals(java.lang.Object,java.lang.Object): object1 == null  =>  !(object1 == null)
+COI_53:187:boolean_equals(java.lang.Object,java.lang.Object): object2 == null  =>  !(object2 == null)
+COI_54:187:boolean_equals(java.lang.Object,java.lang.Object): object1 == null || object2 == null  =>  !(object1 == null || object2 == null)
+LOR_1:33:int_safeAdd(int,int): val1 ^ sum  =>   val1 & sum
+LOR_2:33:int_safeAdd(int,int): val1 ^ sum  =>   val1 | sum
+LOR_3:33:int_safeAdd(int,int): val1 ^ val2  =>   val1 & val2
+LOR_4:33:int_safeAdd(int,int): val1 ^ val2  =>   val1 | val2
+LOR_5:42:long_safeAdd(long,long): val1 ^ sum  =>   val1 & sum
+LOR_6:42:long_safeAdd(long,long): val1 ^ sum  =>   val1 | sum
+LOR_7:42:long_safeAdd(long,long): val1 ^ val2  =>   val1 & val2
+LOR_8:42:long_safeAdd(long,long): val1 ^ val2  =>   val1 | val2
+LOR_9:51:long_safeSubtract(long,long): val1 ^ diff  =>   val1 & diff
+LOR_10:51:long_safeSubtract(long,long): val1 ^ diff  =>   val1 | diff
+LOR_11:51:long_safeSubtract(long,long): val1 ^ val2  =>   val1 & val2
+LOR_12:51:long_safeSubtract(long,long): val1 ^ val2  =>   val1 | val2
+LOI_1:24:int_safeNegate(int):value => ~value
+LOI_2:24:int_safeNegate(int):Integer.MIN_VALUE => ~Integer.MIN_VALUE
+LOI_3:27:int_safeNegate(int):value => ~value
+LOI_4:32:int_safeAdd(int,int):val1 => ~val1
+LOI_5:32:int_safeAdd(int,int):val2 => ~val2
+LOI_6:33:int_safeAdd(int,int):val1 => ~val1
+LOI_7:33:int_safeAdd(int,int):sum => ~sum
+LOI_8:33:int_safeAdd(int,int):val1 => ~val1
+LOI_9:33:int_safeAdd(int,int):val2 => ~val2
+LOI_10:34:int_safeAdd(int,int):val1 => ~val1
+LOI_11:34:int_safeAdd(int,int):val2 => ~val2
+LOI_12:36:int_safeAdd(int,int):sum => ~sum
+LOI_13:41:long_safeAdd(long,long):val1 => ~val1
+LOI_14:41:long_safeAdd(long,long):val2 => ~val2
+LOI_15:42:long_safeAdd(long,long):val1 => ~val1
+LOI_16:42:long_safeAdd(long,long):sum => ~sum
+LOI_17:42:long_safeAdd(long,long):val1 => ~val1
+LOI_18:42:long_safeAdd(long,long):val2 => ~val2
+LOI_19:43:long_safeAdd(long,long):val1 => ~val1
+LOI_20:43:long_safeAdd(long,long):val2 => ~val2
+LOI_21:45:long_safeAdd(long,long):sum => ~sum
+LOI_22:50:long_safeSubtract(long,long):val1 => ~val1
+LOI_23:50:long_safeSubtract(long,long):val2 => ~val2
+LOI_24:51:long_safeSubtract(long,long):val1 => ~val1
+LOI_25:51:long_safeSubtract(long,long):diff => ~diff
+LOI_26:51:long_safeSubtract(long,long):val1 => ~val1
+LOI_27:51:long_safeSubtract(long,long):val2 => ~val2
+LOI_28:52:long_safeSubtract(long,long):val1 => ~val1
+LOI_29:52:long_safeSubtract(long,long):val2 => ~val2
+LOI_30:54:long_safeSubtract(long,long):diff => ~diff
+LOI_31:59:int_safeMultiply(int,int):val1 => ~val1
+LOI_32:59:int_safeMultiply(int,int):val2 => ~val2
+LOI_33:60:int_safeMultiply(int,int):total => ~total
+LOI_34:60:int_safeMultiply(int,int):Integer.MIN_VALUE => ~Integer.MIN_VALUE
+LOI_35:60:int_safeMultiply(int,int):total => ~total
+LOI_36:60:int_safeMultiply(int,int):Integer.MAX_VALUE => ~Integer.MAX_VALUE
+LOI_37:61:int_safeMultiply(int,int):val1 => ~val1
+LOI_38:61:int_safeMultiply(int,int):val2 => ~val2
+LOI_39:63:int_safeMultiply(int,int):total => ~total
+LOI_40:68:long_safeMultiply(long,int):val2 => ~val2
+LOI_41:70:long_safeMultiply(long,int):val1 => ~val1
+LOI_42:70:long_safeMultiply(long,int):Long.MIN_VALUE => ~Long.MIN_VALUE
+LOI_43:71:long_safeMultiply(long,int):val1 => ~val1
+LOI_44:71:long_safeMultiply(long,int):val2 => ~val2
+LOI_45:73:long_safeMultiply(long,int):val1 => ~val1
+LOI_46:79:long_safeMultiply(long,int):val1 => ~val1
+LOI_47:82:long_safeMultiply(long,int):val1 => ~val1
+LOI_48:82:long_safeMultiply(long,int):val2 => ~val2
+LOI_49:83:long_safeMultiply(long,int):total => ~total
+LOI_50:83:long_safeMultiply(long,int):val2 => ~val2
+LOI_51:83:long_safeMultiply(long,int):val1 => ~val1
+LOI_52:84:long_safeMultiply(long,int):val1 => ~val1
+LOI_53:84:long_safeMultiply(long,int):val2 => ~val2
+LOI_54:86:long_safeMultiply(long,int):total => ~total
+LOI_55:91:long_safeMultiply(long,long):val2 => ~val2
+LOI_56:92:long_safeMultiply(long,long):val1 => ~val1
+LOI_57:94:long_safeMultiply(long,long):val1 => ~val1
+LOI_58:95:long_safeMultiply(long,long):val2 => ~val2
+LOI_59:97:long_safeMultiply(long,long):val1 => ~val1
+LOI_60:97:long_safeMultiply(long,long):val2 => ~val2
+LOI_61:100:long_safeMultiply(long,long):val1 => ~val1
+LOI_62:100:long_safeMultiply(long,long):val2 => ~val2
+LOI_63:101:long_safeMultiply(long,long):total => ~total
+LOI_64:101:long_safeMultiply(long,long):val2 => ~val2
+LOI_65:101:long_safeMultiply(long,long):val1 => ~val1
+LOI_66:101:long_safeMultiply(long,long):val1 => ~val1
+LOI_67:101:long_safeMultiply(long,long):Long.MIN_VALUE => ~Long.MIN_VALUE
+LOI_68:101:long_safeMultiply(long,long):val2 => ~val2
+LOI_69:101:long_safeMultiply(long,long):val2 => ~val2
+LOI_70:101:long_safeMultiply(long,long):Long.MIN_VALUE => ~Long.MIN_VALUE
+LOI_71:101:long_safeMultiply(long,long):val1 => ~val1
+LOI_72:102:long_safeMultiply(long,long):val1 => ~val1
+LOI_73:102:long_safeMultiply(long,long):val2 => ~val2
+LOI_74:104:long_safeMultiply(long,long):total => ~total
+LOI_75:109:long_safeDivide(long,long):dividend => ~dividend
+LOI_76:109:long_safeDivide(long,long):Long.MIN_VALUE => ~Long.MIN_VALUE
+LOI_77:109:long_safeDivide(long,long):divisor => ~divisor
+LOI_78:110:long_safeDivide(long,long):dividend => ~dividend
+LOI_79:110:long_safeDivide(long,long):divisor => ~divisor
+LOI_80:112:long_safeDivide(long,long):dividend => ~dividend
+LOI_81:112:long_safeDivide(long,long):divisor => ~divisor
+LOI_82:117:long_safeDivide(long,long,java.math.RoundingMode):dividend => ~dividend
+LOI_83:117:long_safeDivide(long,long,java.math.RoundingMode):Long.MIN_VALUE => ~Long.MIN_VALUE
+LOI_84:117:long_safeDivide(long,long,java.math.RoundingMode):divisor => ~divisor
+LOI_85:118:long_safeDivide(long,long,java.math.RoundingMode):dividend => ~dividend
+LOI_86:118:long_safeDivide(long,long,java.math.RoundingMode):divisor => ~divisor
+LOI_87:120:long_safeDivide(long,long,java.math.RoundingMode):dividend => ~dividend
+LOI_88:121:long_safeDivide(long,long,java.math.RoundingMode):divisor => ~divisor
+LOI_89:127:int_safeToInt(long):Integer.MIN_VALUE => ~Integer.MIN_VALUE
+LOI_90:127:int_safeToInt(long):value => ~value
+LOI_91:127:int_safeToInt(long):value => ~value
+LOI_92:127:int_safeToInt(long):Integer.MAX_VALUE => ~Integer.MAX_VALUE
+LOI_93:128:int_safeToInt(long):value => ~value
+LOI_94:130:int_safeToInt(long):value => ~value
+LOI_95:135:int_safeMultiplyToInt(long,long):val1 => ~val1
+LOI_96:135:int_safeMultiplyToInt(long,long):val2 => ~val2
+LOI_97:136:int_safeMultiplyToInt(long,long):val => ~val
+LOI_98:141:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int):value => ~value
+LOI_99:141:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int):lowerBound => ~lowerBound
+LOI_100:141:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int):value => ~value
+LOI_101:141:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int):upperBound => ~upperBound
+LOI_102:142:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int):value => ~value
+LOI_103:142:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int):lowerBound => ~lowerBound
+LOI_104:142:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int):upperBound => ~upperBound
+LOI_105:148:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):value => ~value
+LOI_106:148:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):lowerBound => ~lowerBound
+LOI_107:148:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):value => ~value
+LOI_108:148:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):upperBound => ~upperBound
+LOI_109:149:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):value => ~value
+LOI_110:149:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):lowerBound => ~lowerBound
+LOI_111:149:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):upperBound => ~upperBound
+LOI_112:155:void_verifyValueBounds(java.lang.String,int,int,int):value => ~value
+LOI_113:155:void_verifyValueBounds(java.lang.String,int,int,int):lowerBound => ~lowerBound
+LOI_114:155:void_verifyValueBounds(java.lang.String,int,int,int):value => ~value
+LOI_115:155:void_verifyValueBounds(java.lang.String,int,int,int):upperBound => ~upperBound
+LOI_116:156:void_verifyValueBounds(java.lang.String,int,int,int):value => ~value
+LOI_117:156:void_verifyValueBounds(java.lang.String,int,int,int):lowerBound => ~lowerBound
+LOI_118:156:void_verifyValueBounds(java.lang.String,int,int,int):upperBound => ~upperBound
+LOI_119:162:int_getWrappedValue(int,int,int,int):currentValue => ~currentValue
+LOI_120:162:int_getWrappedValue(int,int,int,int):wrapValue => ~wrapValue
+LOI_121:162:int_getWrappedValue(int,int,int,int):minValue => ~minValue
+LOI_122:162:int_getWrappedValue(int,int,int,int):maxValue => ~maxValue
+LOI_123:167:int_getWrappedValue(int,int,int):minValue => ~minValue
+LOI_124:167:int_getWrappedValue(int,int,int):maxValue => ~maxValue
+LOI_125:170:int_getWrappedValue(int,int,int):maxValue => ~maxValue
+LOI_126:170:int_getWrappedValue(int,int,int):minValue => ~minValue
+LOI_127:171:int_getWrappedValue(int,int,int):minValue => ~minValue
+LOI_128:172:int_getWrappedValue(int,int,int):value => ~value
+LOI_129:173:int_getWrappedValue(int,int,int):value => ~value
+LOI_130:173:int_getWrappedValue(int,int,int):wrapRange => ~wrapRange
+LOI_131:173:int_getWrappedValue(int,int,int):minValue => ~minValue
+LOI_132:175:int_getWrappedValue(int,int,int):value => ~value
+LOI_133:175:int_getWrappedValue(int,int,int):wrapRange => ~wrapRange
+LOI_134:176:int_getWrappedValue(int,int,int):remByRange => ~remByRange
+LOI_135:177:int_getWrappedValue(int,int,int):minValue => ~minValue
+LOI_136:179:int_getWrappedValue(int,int,int):wrapRange => ~wrapRange
+LOI_137:179:int_getWrappedValue(int,int,int):remByRange => ~remByRange
+LOI_138:179:int_getWrappedValue(int,int,int):minValue => ~minValue
+ASRS_1:171:int_getWrappedValue(int,int,int):value -= minValue => value += minValue
+ASRS_2:171:int_getWrappedValue(int,int,int):value -= minValue => value /= minValue
+ASRS_3:171:int_getWrappedValue(int,int,int):value -= minValue => value *= minValue
+ASRS_4:171:int_getWrappedValue(int,int,int):value -= minValue => value %= minValue
+SDL_1:25:int_safeNegate(int): if (value == Integer.MIN_VALUE) {     throw new java.lang.ArithmeticException( \"Integer.MIN_VALUE cannot be negated\" ); } return -value;  =>   return -value;
+SDL_2:25:int_safeNegate(int): throw new java.lang.ArithmeticException( \"Integer.MIN_VALUE cannot be negated\" );  =>  
+SDL_3:27:int_safeNegate(int): if (value == Integer.MIN_VALUE) {     throw new java.lang.ArithmeticException( \"Integer.MIN_VALUE cannot be negated\" ); }  =>   if (true) {     throw new java.lang.ArithmeticException( \"Integer.MIN_VALUE cannot be negated\" ); }
+SDL_4:28:int_safeNegate(int): return -value;  =>   return 0;
+SDL_5:34:int_safeAdd(int,int): int sum = val1 + val2; if ((val1 ^ sum) < 0 && (val1 ^ val2) >= 0) {     throw new java.lang.ArithmeticException( \"The calculation caused an overflow: \" + val1 + \" + \" + val2 ); } return sum;  =>   int sum = val1 + val2; return sum;
+SDL_6:34:int_safeAdd(int,int): throw new java.lang.ArithmeticException( \"The calculation caused an overflow: \" + val1 + \" + \" + val2 );  =>  
+SDL_7:36:int_safeAdd(int,int): if ((val1 ^ sum) < 0 && (val1 ^ val2) >= 0) {     throw new java.lang.ArithmeticException( \"The calculation caused an overflow: \" + val1 + \" + \" + val2 ); }  =>   if (true) {     throw new java.lang.ArithmeticException( \"The calculation caused an overflow: \" + val1 + \" + \" + val2 ); }
+SDL_8:37:int_safeAdd(int,int): return sum;  =>   return 0;
+SDL_9:43:long_safeAdd(long,long): long sum = val1 + val2; if ((val1 ^ sum) < 0 && (val1 ^ val2) >= 0) {     throw new java.lang.ArithmeticException( \"The calculation caused an overflow: \" + val1 + \" + \" + val2 ); } return sum;  =>   long sum = val1 + val2; return sum;
+SDL_10:43:long_safeAdd(long,long): throw new java.lang.ArithmeticException( \"The calculation caused an overflow: \" + val1 + \" + \" + val2 );  =>  
+SDL_11:45:long_safeAdd(long,long): if ((val1 ^ sum) < 0 && (val1 ^ val2) >= 0) {     throw new java.lang.ArithmeticException( \"The calculation caused an overflow: \" + val1 + \" + \" + val2 ); }  =>   if (true) {     throw new java.lang.ArithmeticException( \"The calculation caused an overflow: \" + val1 + \" + \" + val2 ); }
+SDL_12:46:long_safeAdd(long,long): return sum;  =>   return 0;
+SDL_13:52:long_safeSubtract(long,long): long diff = val1 - val2; if ((val1 ^ diff) < 0 && (val1 ^ val2) < 0) {     throw new java.lang.ArithmeticException( \"The calculation caused an overflow: \" + val1 + \" - \" + val2 ); } return diff;  =>   long diff = val1 - val2; return diff;
+SDL_14:52:long_safeSubtract(long,long): throw new java.lang.ArithmeticException( \"The calculation caused an overflow: \" + val1 + \" - \" + val2 );  =>  
+SDL_15:54:long_safeSubtract(long,long): if ((val1 ^ diff) < 0 && (val1 ^ val2) < 0) {     throw new java.lang.ArithmeticException( \"The calculation caused an overflow: \" + val1 + \" - \" + val2 ); }  =>   if (true) {     throw new java.lang.ArithmeticException( \"The calculation caused an overflow: \" + val1 + \" - \" + val2 ); }
+SDL_16:55:long_safeSubtract(long,long): return diff;  =>   return 0;
+SDL_17:61:int_safeMultiply(int,int): long total = (long) val1 * (long) val2; if (total < Integer.MIN_VALUE || total > Integer.MAX_VALUE) {     throw new java.lang.ArithmeticException( \"Multiplication overflows an int: \" + val1 + \" * \" + val2 ); } return (int) total;  =>   long total = (long) val1 * (long) val2; return (int) total;
+SDL_18:61:int_safeMultiply(int,int): throw new java.lang.ArithmeticException( \"Multiplication overflows an int: \" + val1 + \" * \" + val2 );  =>  
+SDL_19:63:int_safeMultiply(int,int): if (total < Integer.MIN_VALUE || total > Integer.MAX_VALUE) {     throw new java.lang.ArithmeticException( \"Multiplication overflows an int: \" + val1 + \" * \" + val2 ); }  =>   if (true) {     throw new java.lang.ArithmeticException( \"Multiplication overflows an int: \" + val1 + \" * \" + val2 ); }
+SDL_20:64:int_safeMultiply(int,int): return (int) total;  =>   return 0;
+SDL_21:73:long_safeMultiply(long,int): switch (val2) { case -1 :     if (val1 == Long.MIN_VALUE) {         throw new java.lang.ArithmeticException( \"Multiplication overflows a long: \" + val1 + \" * \" + val2 );     }     return -val1; case 0 :     return 0L; case 1 :     return val1; } long total = val1 * val2; if (total / val2 != val1) {     throw new java.lang.ArithmeticException( \"Multiplication overflows a long: \" + val1 + \" * \" + val2 ); } return total;  =>   long total = val1 * val2; if (total / val2 != val1) {     throw new java.lang.ArithmeticException( \"Multiplication overflows a long: \" + val1 + \" * \" + val2 ); } return total;
+SDL_22:84:long_safeMultiply(long,int): switch (val2) { case -1 :     if (val1 == Long.MIN_VALUE) {         throw new java.lang.ArithmeticException( \"Multiplication overflows a long: \" + val1 + \" * \" + val2 );     }     return -val1; case 0 :     return 0L; case 1 :     return val1; } long total = val1 * val2; if (total / val2 != val1) {     throw new java.lang.ArithmeticException( \"Multiplication overflows a long: \" + val1 + \" * \" + val2 ); } return total;  =>   switch (val2) { case -1 :     if (val1 == Long.MIN_VALUE) {         throw new java.lang.ArithmeticException( \"Multiplication overflows a long: \" + val1 + \" * \" + val2 );     }     return -val1; case 0 :     return 0L; case 1 :     return val1; } long total = val1 * val2; return total;
+SDL_23:71:long_safeMultiply(long,int): if (val1 == Long.MIN_VALUE) {     throw new java.lang.ArithmeticException( \"Multiplication overflows a long: \" + val1 + \" * \" + val2 ); } return -val1;  =>   return -val1;
+SDL_24:71:long_safeMultiply(long,int): throw new java.lang.ArithmeticException( \"Multiplication overflows a long: \" + val1 + \" * \" + val2 );  =>  
+SDL_25:73:long_safeMultiply(long,int): if (val1 == Long.MIN_VALUE) {     throw new java.lang.ArithmeticException( \"Multiplication overflows a long: \" + val1 + \" * \" + val2 ); }  =>   if (true) {     throw new java.lang.ArithmeticException( \"Multiplication overflows a long: \" + val1 + \" * \" + val2 ); }
+SDL_26:74:long_safeMultiply(long,int): return -val1;  =>   return 0;
+SDL_27:77:long_safeMultiply(long,int): return 0L;  =>   return 0;
+SDL_28:80:long_safeMultiply(long,int): return val1;  =>   return 0;
+SDL_29:75:long_safeMultiply(long,int): case -1 :     if (val1 == Long.MIN_VALUE) {         throw new java.lang.ArithmeticException( \"Multiplication overflows a long: \" + val1 + \" * \" + val2 );     }     return -val1; case 0 :     return 0L; case 1 :     return val1;  =>   case 0 :     return 0L; case 1 :     return val1;
+SDL_30:78:long_safeMultiply(long,int): case -1 :     if (val1 == Long.MIN_VALUE) {         throw new java.lang.ArithmeticException( \"Multiplication overflows a long: \" + val1 + \" * \" + val2 );     }     return -val1; case 0 :     return 0L; case 1 :     return val1;  =>   case -1 :     if (val1 == Long.MIN_VALUE) {         throw new java.lang.ArithmeticException( \"Multiplication overflows a long: \" + val1 + \" * \" + val2 );     }     return -val1; case 1 :     return val1;
+SDL_31:78:long_safeMultiply(long,int): case -1 :     if (val1 == Long.MIN_VALUE) {         throw new java.lang.ArithmeticException( \"Multiplication overflows a long: \" + val1 + \" * \" + val2 );     }     return -val1; case 0 :     return 0L; case 1 :     return val1;  =>   case -1 :     if (val1 == Long.MIN_VALUE) {         throw new java.lang.ArithmeticException( \"Multiplication overflows a long: \" + val1 + \" * \" + val2 );     }     return -val1; case 0 :     return 0L;
+SDL_32:84:long_safeMultiply(long,int): throw new java.lang.ArithmeticException( \"Multiplication overflows a long: \" + val1 + \" * \" + val2 );  =>  
+SDL_33:86:long_safeMultiply(long,int): if (total / val2 != val1) {     throw new java.lang.ArithmeticException( \"Multiplication overflows a long: \" + val1 + \" * \" + val2 ); }  =>   if (true) {     throw new java.lang.ArithmeticException( \"Multiplication overflows a long: \" + val1 + \" * \" + val2 ); }
+SDL_34:87:long_safeMultiply(long,int): return total;  =>   return 0;
+SDL_35:102:long_safeMultiply(long,long): if (val2 == 1) {     return val1; } if (val1 == 1) {     return val2; } if (val1 == 0 || val2 == 0) {     return 0; } long total = val1 * val2; if (total / val2 != val1 || val1 == Long.MIN_VALUE && val2 == -1 || val2 == Long.MIN_VALUE && val1 == -1) {     throw new java.lang.ArithmeticException( \"Multiplication overflows a long: \" + val1 + \" * \" + val2 ); } return total;  =>   if (val1 == 1) {     return val2; } if (val1 == 0 || val2 == 0) {     return 0; } long total = val1 * val2; if (total / val2 != val1 || val1 == Long.MIN_VALUE && val2 == -1 || val2 == Long.MIN_VALUE && val1 == -1) {     throw new java.lang.ArithmeticException( \"Multiplication overflows a long: \" + val1 + \" * \" + val2 ); } return total;
+SDL_36:102:long_safeMultiply(long,long): if (val2 == 1) {     return val1; } if (val1 == 1) {     return val2; } if (val1 == 0 || val2 == 0) {     return 0; } long total = val1 * val2; if (total / val2 != val1 || val1 == Long.MIN_VALUE && val2 == -1 || val2 == Long.MIN_VALUE && val1 == -1) {     throw new java.lang.ArithmeticException( \"Multiplication overflows a long: \" + val1 + \" * \" + val2 ); } return total;  =>   if (val2 == 1) {     return val1; } if (val1 == 0 || val2 == 0) {     return 0; } long total = val1 * val2; if (total / val2 != val1 || val1 == Long.MIN_VALUE && val2 == -1 || val2 == Long.MIN_VALUE && val1 == -1) {     throw new java.lang.ArithmeticException( \"Multiplication overflows a long: \" + val1 + \" * \" + val2 ); } return total;
+SDL_37:102:long_safeMultiply(long,long): if (val2 == 1) {     return val1; } if (val1 == 1) {     return val2; } if (val1 == 0 || val2 == 0) {     return 0; } long total = val1 * val2; if (total / val2 != val1 || val1 == Long.MIN_VALUE && val2 == -1 || val2 == Long.MIN_VALUE && val1 == -1) {     throw new java.lang.ArithmeticException( \"Multiplication overflows a long: \" + val1 + \" * \" + val2 ); } return total;  =>   if (val2 == 1) {     return val1; } if (val1 == 1) {     return val2; } long total = val1 * val2; if (total / val2 != val1 || val1 == Long.MIN_VALUE && val2 == -1 || val2 == Long.MIN_VALUE && val1 == -1) {     throw new java.lang.ArithmeticException( \"Multiplication overflows a long: \" + val1 + \" * \" + val2 ); } return total;
+SDL_38:102:long_safeMultiply(long,long): if (val2 == 1) {     return val1; } if (val1 == 1) {     return val2; } if (val1 == 0 || val2 == 0) {     return 0; } long total = val1 * val2; if (total / val2 != val1 || val1 == Long.MIN_VALUE && val2 == -1 || val2 == Long.MIN_VALUE && val1 == -1) {     throw new java.lang.ArithmeticException( \"Multiplication overflows a long: \" + val1 + \" * \" + val2 ); } return total;  =>   if (val2 == 1) {     return val1; } if (val1 == 1) {     return val2; } if (val1 == 0 || val2 == 0) {     return 0; } long total = val1 * val2; return total;
+SDL_39:94:long_safeMultiply(long,long): if (val2 == 1) {     return val1; }  =>   if (true) {     return val1; }
+SDL_40:93:long_safeMultiply(long,long): return val1;  =>   return 0;
+SDL_41:97:long_safeMultiply(long,long): if (val1 == 1) {     return val2; }  =>   if (true) {     return val2; }
+SDL_42:96:long_safeMultiply(long,long): return val2;  =>   return 0;
+SDL_43:100:long_safeMultiply(long,long): if (val1 == 0 || val2 == 0) {     return 0; }  =>   if (true) {     return 0; }
+SDL_44:102:long_safeMultiply(long,long): throw new java.lang.ArithmeticException( \"Multiplication overflows a long: \" + val1 + \" * \" + val2 );  =>  
+SDL_45:104:long_safeMultiply(long,long): if (total / val2 != val1 || val1 == Long.MIN_VALUE && val2 == -1 || val2 == Long.MIN_VALUE && val1 == -1) {     throw new java.lang.ArithmeticException( \"Multiplication overflows a long: \" + val1 + \" * \" + val2 ); }  =>   if (true) {     throw new java.lang.ArithmeticException( \"Multiplication overflows a long: \" + val1 + \" * \" + val2 ); }
+SDL_46:105:long_safeMultiply(long,long): return total;  =>   return 0;
+SDL_47:110:long_safeDivide(long,long): if (dividend == Long.MIN_VALUE && divisor == -1L) {     throw new java.lang.ArithmeticException( \"Multiplication overflows a long: \" + dividend + \" / \" + divisor ); } return dividend / divisor;  =>   return dividend / divisor;
+SDL_48:110:long_safeDivide(long,long): throw new java.lang.ArithmeticException( \"Multiplication overflows a long: \" + dividend + \" / \" + divisor );  =>  
+SDL_49:112:long_safeDivide(long,long): if (dividend == Long.MIN_VALUE && divisor == -1L) {     throw new java.lang.ArithmeticException( \"Multiplication overflows a long: \" + dividend + \" / \" + divisor ); }  =>   if (true) {     throw new java.lang.ArithmeticException( \"Multiplication overflows a long: \" + dividend + \" / \" + divisor ); }
+SDL_50:113:long_safeDivide(long,long): return dividend / divisor;  =>   return 0;
+SDL_51:120:long_safeDivide(long,long,java.math.RoundingMode): if (dividend == Long.MIN_VALUE && divisor == -1L) {     throw new java.lang.ArithmeticException( \"Multiplication overflows a long: \" + dividend + \" / \" + divisor ); } java.math.BigDecimal dividendBigDecimal = new java.math.BigDecimal( dividend ); java.math.BigDecimal divisorBigDecimal = new java.math.BigDecimal( divisor ); return dividendBigDecimal.divide( divisorBigDecimal, roundingMode ).longValue();  =>   java.math.BigDecimal dividendBigDecimal = new java.math.BigDecimal( dividend ); java.math.BigDecimal divisorBigDecimal = new java.math.BigDecimal( divisor ); return dividendBigDecimal.divide( divisorBigDecimal, roundingMode ).longValue();
+SDL_52:118:long_safeDivide(long,long,java.math.RoundingMode): throw new java.lang.ArithmeticException( \"Multiplication overflows a long: \" + dividend + \" / \" + divisor );  =>  
+SDL_53:120:long_safeDivide(long,long,java.math.RoundingMode): if (dividend == Long.MIN_VALUE && divisor == -1L) {     throw new java.lang.ArithmeticException( \"Multiplication overflows a long: \" + dividend + \" / \" + divisor ); }  =>   if (true) {     throw new java.lang.ArithmeticException( \"Multiplication overflows a long: \" + dividend + \" / \" + divisor ); }
+SDL_54:123:long_safeDivide(long,long,java.math.RoundingMode): return dividendBigDecimal.divide( divisorBigDecimal, roundingMode ).longValue();  =>   return 0;
+SDL_55:128:int_safeToInt(long): if (Integer.MIN_VALUE <= value && value <= Integer.MAX_VALUE) {     return (int) value; } throw new java.lang.ArithmeticException( \"Value cannot fit in an int: \" + value );  =>   throw new java.lang.ArithmeticException( \"Value cannot fit in an int: \" + value );
+SDL_56:130:int_safeToInt(long): if (Integer.MIN_VALUE <= value && value <= Integer.MAX_VALUE) {     return (int) value; } throw new java.lang.ArithmeticException( \"Value cannot fit in an int: \" + value );  =>   if (Integer.MIN_VALUE <= value && value <= Integer.MAX_VALUE) {     return (int) value; }
+SDL_57:130:int_safeToInt(long): if (Integer.MIN_VALUE <= value && value <= Integer.MAX_VALUE) {     return (int) value; }  =>   if (true) {     return (int) value; }
+SDL_58:129:int_safeToInt(long): return (int) value;  =>   return 0;
+SDL_59:137:int_safeMultiplyToInt(long,long): return FieldUtils.safeToInt( val );  =>   return 0;
+SDL_60:141:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int): if (value < lowerBound || value > upperBound) {     throw new org.joda.time.IllegalFieldValueException( field.getType(), Integer.valueOf( value ), Integer.valueOf( lowerBound ), Integer.valueOf( upperBound ) ); }  =>  
+SDL_61:142:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int): throw new org.joda.time.IllegalFieldValueException( field.getType(), Integer.valueOf( value ), Integer.valueOf( lowerBound ), Integer.valueOf( upperBound ) );  =>  
+SDL_62:144:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int): if (value < lowerBound || value > upperBound) {     throw new org.joda.time.IllegalFieldValueException( field.getType(), Integer.valueOf( value ), Integer.valueOf( lowerBound ), Integer.valueOf( upperBound ) ); }  =>   if (true) {     throw new org.joda.time.IllegalFieldValueException( field.getType(), Integer.valueOf( value ), Integer.valueOf( lowerBound ), Integer.valueOf( upperBound ) ); }
+SDL_63:148:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int): if (value < lowerBound || value > upperBound) {     throw new org.joda.time.IllegalFieldValueException( fieldType, Integer.valueOf( value ), Integer.valueOf( lowerBound ), Integer.valueOf( upperBound ) ); }  =>  
+SDL_64:149:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int): throw new org.joda.time.IllegalFieldValueException( fieldType, Integer.valueOf( value ), Integer.valueOf( lowerBound ), Integer.valueOf( upperBound ) );  =>  
+SDL_65:151:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int): if (value < lowerBound || value > upperBound) {     throw new org.joda.time.IllegalFieldValueException( fieldType, Integer.valueOf( value ), Integer.valueOf( lowerBound ), Integer.valueOf( upperBound ) ); }  =>   if (true) {     throw new org.joda.time.IllegalFieldValueException( fieldType, Integer.valueOf( value ), Integer.valueOf( lowerBound ), Integer.valueOf( upperBound ) ); }
+SDL_66:155:void_verifyValueBounds(java.lang.String,int,int,int): if (value < lowerBound || value > upperBound) {     throw new org.joda.time.IllegalFieldValueException( fieldName, Integer.valueOf( value ), Integer.valueOf( lowerBound ), Integer.valueOf( upperBound ) ); }  =>  
+SDL_67:156:void_verifyValueBounds(java.lang.String,int,int,int): throw new org.joda.time.IllegalFieldValueException( fieldName, Integer.valueOf( value ), Integer.valueOf( lowerBound ), Integer.valueOf( upperBound ) );  =>  
+SDL_68:158:void_verifyValueBounds(java.lang.String,int,int,int): if (value < lowerBound || value > upperBound) {     throw new org.joda.time.IllegalFieldValueException( fieldName, Integer.valueOf( value ), Integer.valueOf( lowerBound ), Integer.valueOf( upperBound ) ); }  =>   if (true) {     throw new org.joda.time.IllegalFieldValueException( fieldName, Integer.valueOf( value ), Integer.valueOf( lowerBound ), Integer.valueOf( upperBound ) ); }
+SDL_69:163:int_getWrappedValue(int,int,int,int): return getWrappedValue( currentValue + wrapValue, minValue, maxValue );  =>   return 0;
+SDL_70:177:int_getWrappedValue(int,int,int): if (minValue >= maxValue) {     throw new java.lang.IllegalArgumentException( \"MIN > MAX\" ); } int wrapRange = maxValue - minValue + 1; value -= minValue; if (value >= 0) {     return value % wrapRange + minValue; } int remByRange = -value % wrapRange; if (remByRange == 0) {     return 0 + minValue; } return wrapRange - remByRange + minValue;  =>   int wrapRange = maxValue - minValue + 1; value -= minValue; if (value >= 0) {     return value % wrapRange + minValue; } int remByRange = -value % wrapRange; if (remByRange == 0) {     return 0 + minValue; } return wrapRange - remByRange + minValue;
+SDL_71:179:int_getWrappedValue(int,int,int): if (minValue >= maxValue) {     throw new java.lang.IllegalArgumentException( \"MIN > MAX\" ); } int wrapRange = maxValue - minValue + 1; value -= minValue; if (value >= 0) {     return value % wrapRange + minValue; } int remByRange = -value % wrapRange; if (remByRange == 0) {     return 0 + minValue; } return wrapRange - remByRange + minValue;  =>   if (minValue >= maxValue) {     throw new java.lang.IllegalArgumentException( \"MIN > MAX\" ); } int wrapRange = maxValue - minValue + 1; if (value >= 0) {     return value % wrapRange + minValue; } int remByRange = -value % wrapRange; if (remByRange == 0) {     return 0 + minValue; } return wrapRange - remByRange + minValue;
+SDL_72:177:int_getWrappedValue(int,int,int): if (minValue >= maxValue) {     throw new java.lang.IllegalArgumentException( \"MIN > MAX\" ); } int wrapRange = maxValue - minValue + 1; value -= minValue; if (value >= 0) {     return value % wrapRange + minValue; } int remByRange = -value % wrapRange; if (remByRange == 0) {     return 0 + minValue; } return wrapRange - remByRange + minValue;  =>   if (minValue >= maxValue) {     throw new java.lang.IllegalArgumentException( \"MIN > MAX\" ); } int wrapRange = maxValue - minValue + 1; value -= minValue; int remByRange = -value % wrapRange; if (remByRange == 0) {     return 0 + minValue; } return wrapRange - remByRange + minValue;
+SDL_73:177:int_getWrappedValue(int,int,int): if (minValue >= maxValue) {     throw new java.lang.IllegalArgumentException( \"MIN > MAX\" ); } int wrapRange = maxValue - minValue + 1; value -= minValue; if (value >= 0) {     return value % wrapRange + minValue; } int remByRange = -value % wrapRange; if (remByRange == 0) {     return 0 + minValue; } return wrapRange - remByRange + minValue;  =>   if (minValue >= maxValue) {     throw new java.lang.IllegalArgumentException( \"MIN > MAX\" ); } int wrapRange = maxValue - minValue + 1; value -= minValue; if (value >= 0) {     return value % wrapRange + minValue; } int remByRange = -value % wrapRange; return wrapRange - remByRange + minValue;
+SDL_74:168:int_getWrappedValue(int,int,int): throw new java.lang.IllegalArgumentException( \"MIN > MAX\" );  =>  
+SDL_75:170:int_getWrappedValue(int,int,int): if (minValue >= maxValue) {     throw new java.lang.IllegalArgumentException( \"MIN > MAX\" ); }  =>   if (true) {     throw new java.lang.IllegalArgumentException( \"MIN > MAX\" ); }
+SDL_76:175:int_getWrappedValue(int,int,int): if (value >= 0) {     return value % wrapRange + minValue; }  =>   if (true) {     return value % wrapRange + minValue; }
+SDL_77:174:int_getWrappedValue(int,int,int): return value % wrapRange + minValue;  =>   return 0;
+SDL_78:179:int_getWrappedValue(int,int,int): if (remByRange == 0) {     return 0 + minValue; }  =>   if (true) {     return 0 + minValue; }
+SDL_79:178:int_getWrappedValue(int,int,int): return 0 + minValue;  =>   return 0;
+SDL_80:180:int_getWrappedValue(int,int,int): return wrapRange - remByRange + minValue;  =>   return 0;
+SDL_81:188:boolean_equals(java.lang.Object,java.lang.Object): if (object1 == object2) {     return true; } if (object1 == null || object2 == null) {     return false; } return object1.equals( object2 );  =>   if (object1 == null || object2 == null) {     return false; } return object1.equals( object2 );
+SDL_82:188:boolean_equals(java.lang.Object,java.lang.Object): if (object1 == object2) {     return true; } if (object1 == null || object2 == null) {     return false; } return object1.equals( object2 );  =>   if (object1 == object2) {     return true; } return object1.equals( object2 );
+SDL_83:187:boolean_equals(java.lang.Object,java.lang.Object): if (object1 == object2) {     return true; }  =>   if (true) {     return true; }
+SDL_84:186:boolean_equals(java.lang.Object,java.lang.Object): return true;  =>   return false;
+SDL_85:190:boolean_equals(java.lang.Object,java.lang.Object): if (object1 == null || object2 == null) {     return false; }  =>   if (true) {     return false; }
+SDL_86:189:boolean_equals(java.lang.Object,java.lang.Object): return false;  =>   return true;
+SDL_87:191:boolean_equals(java.lang.Object,java.lang.Object): return object1.equals( object2 );  =>   return true;
+SDL_88:191:boolean_equals(java.lang.Object,java.lang.Object): return object1.equals( object2 );  =>   return false;
+VDL_1:24:int_safeNegate(int):value == Integer.MIN_VALUE => Integer.MIN_VALUE
+VDL_2:27:int_safeNegate(int):-value =>  
+VDL_3:32:int_safeAdd(int,int):val1 + val2 => val2
+VDL_4:32:int_safeAdd(int,int):val1 + val2 => val1
+VDL_5:33:int_safeAdd(int,int):val1 ^ sum => sum
+VDL_6:33:int_safeAdd(int,int):val1 ^ sum => val1
+VDL_7:33:int_safeAdd(int,int):val1 ^ val2 => val2
+VDL_8:33:int_safeAdd(int,int):val1 ^ val2 => val1
+VDL_9:34:int_safeAdd(int,int):"The calculation caused an overflow: " + val1 => "The calculation caused an overflow: "
+VDL_10:34:int_safeAdd(int,int):"The calculation caused an overflow: " + val1 + " + " + val2 => "The calculation caused an overflow: " + val1 + " + "
+VDL_11:41:long_safeAdd(long,long):val1 + val2 => val2
+VDL_12:41:long_safeAdd(long,long):val1 + val2 => val1
+VDL_13:42:long_safeAdd(long,long):val1 ^ sum => sum
+VDL_14:42:long_safeAdd(long,long):val1 ^ sum => val1
+VDL_15:42:long_safeAdd(long,long):val1 ^ val2 => val2
+VDL_16:42:long_safeAdd(long,long):val1 ^ val2 => val1
+VDL_17:43:long_safeAdd(long,long):"The calculation caused an overflow: " + val1 => "The calculation caused an overflow: "
+VDL_18:43:long_safeAdd(long,long):"The calculation caused an overflow: " + val1 + " + " + val2 => "The calculation caused an overflow: " + val1 + " + "
+VDL_19:50:long_safeSubtract(long,long):val1 - val2 => val2
+VDL_20:50:long_safeSubtract(long,long):val1 - val2 => val1
+VDL_21:51:long_safeSubtract(long,long):val1 ^ diff => diff
+VDL_22:51:long_safeSubtract(long,long):val1 ^ diff => val1
+VDL_23:51:long_safeSubtract(long,long):val1 ^ val2 => val2
+VDL_24:51:long_safeSubtract(long,long):val1 ^ val2 => val1
+VDL_25:52:long_safeSubtract(long,long):"The calculation caused an overflow: " + val1 => "The calculation caused an overflow: "
+VDL_26:52:long_safeSubtract(long,long):"The calculation caused an overflow: " + val1 + " - " + val2 => "The calculation caused an overflow: " + val1 + " - "
+VDL_27:60:int_safeMultiply(int,int):total < Integer.MIN_VALUE => Integer.MIN_VALUE
+VDL_28:60:int_safeMultiply(int,int):total > Integer.MAX_VALUE => Integer.MAX_VALUE
+VDL_29:61:int_safeMultiply(int,int):"Multiplication overflows an int: " + val1 => "Multiplication overflows an int: "
+VDL_30:61:int_safeMultiply(int,int):"Multiplication overflows an int: " + val1 + " * " + val2 => "Multiplication overflows an int: " + val1 + " * "
+VDL_31:70:long_safeMultiply(long,int):val1 == Long.MIN_VALUE => Long.MIN_VALUE
+VDL_32:71:long_safeMultiply(long,int):"Multiplication overflows a long: " + val1 => "Multiplication overflows a long: "
+VDL_33:71:long_safeMultiply(long,int):"Multiplication overflows a long: " + val1 + " * " + val2 => "Multiplication overflows a long: " + val1 + " * "
+VDL_34:73:long_safeMultiply(long,int):-val1 =>  
+VDL_35:82:long_safeMultiply(long,int):val1 * val2 => val2
+VDL_36:82:long_safeMultiply(long,int):val1 * val2 => val1
+VDL_37:83:long_safeMultiply(long,int):total / val2 => val2
+VDL_38:83:long_safeMultiply(long,int):total / val2 => total
+VDL_39:83:long_safeMultiply(long,int):total / val2 != val1 => total / val2
+VDL_40:84:long_safeMultiply(long,int):"Multiplication overflows a long: " + val1 => "Multiplication overflows a long: "
+VDL_41:84:long_safeMultiply(long,int):"Multiplication overflows a long: " + val1 + " * " + val2 => "Multiplication overflows a long: " + val1 + " * "
+VDL_42:91:long_safeMultiply(long,long):val2 == 1 => 1
+VDL_43:94:long_safeMultiply(long,long):val1 == 1 => 1
+VDL_44:97:long_safeMultiply(long,long):val1 == 0 => 0
+VDL_45:97:long_safeMultiply(long,long):val2 == 0 => 0
+VDL_46:100:long_safeMultiply(long,long):val1 * val2 => val2
+VDL_47:100:long_safeMultiply(long,long):val1 * val2 => val1
+VDL_48:101:long_safeMultiply(long,long):total / val2 => val2
+VDL_49:101:long_safeMultiply(long,long):total / val2 => total
+VDL_50:101:long_safeMultiply(long,long):total / val2 != val1 => total / val2
+VDL_51:101:long_safeMultiply(long,long):val1 == Long.MIN_VALUE => Long.MIN_VALUE
+VDL_52:101:long_safeMultiply(long,long):val2 == -1 => -1
+VDL_53:101:long_safeMultiply(long,long):val2 == Long.MIN_VALUE => Long.MIN_VALUE
+VDL_54:101:long_safeMultiply(long,long):val1 == -1 => -1
+VDL_55:102:long_safeMultiply(long,long):"Multiplication overflows a long: " + val1 => "Multiplication overflows a long: "
+VDL_56:102:long_safeMultiply(long,long):"Multiplication overflows a long: " + val1 + " * " + val2 => "Multiplication overflows a long: " + val1 + " * "
+VDL_57:109:long_safeDivide(long,long):dividend == Long.MIN_VALUE => Long.MIN_VALUE
+VDL_58:109:long_safeDivide(long,long):divisor == -1L => -1L
+VDL_59:110:long_safeDivide(long,long):"Multiplication overflows a long: " + dividend => "Multiplication overflows a long: "
+VDL_60:110:long_safeDivide(long,long):"Multiplication overflows a long: " + dividend + " / " + divisor => "Multiplication overflows a long: " + dividend + " / "
+VDL_61:112:long_safeDivide(long,long):dividend / divisor => divisor
+VDL_62:112:long_safeDivide(long,long):dividend / divisor => dividend
+VDL_63:117:long_safeDivide(long,long,java.math.RoundingMode):dividend == Long.MIN_VALUE => Long.MIN_VALUE
+VDL_64:117:long_safeDivide(long,long,java.math.RoundingMode):divisor == -1L => -1L
+VDL_65:118:long_safeDivide(long,long,java.math.RoundingMode):"Multiplication overflows a long: " + dividend => "Multiplication overflows a long: "
+VDL_66:118:long_safeDivide(long,long,java.math.RoundingMode):"Multiplication overflows a long: " + dividend + " / " + divisor => "Multiplication overflows a long: " + dividend + " / "
+VDL_67:127:int_safeToInt(long):Integer.MIN_VALUE <= value => Integer.MIN_VALUE
+VDL_68:127:int_safeToInt(long):value <= Integer.MAX_VALUE => Integer.MAX_VALUE
+VDL_69:130:int_safeToInt(long):"Value cannot fit in an int: " + value => "Value cannot fit in an int: "
+VDL_70:141:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int):value < lowerBound => lowerBound
+VDL_71:141:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int):value < lowerBound => value
+VDL_72:141:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int):value > upperBound => upperBound
+VDL_73:141:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int):value > upperBound => value
+VDL_74:148:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):value < lowerBound => lowerBound
+VDL_75:148:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):value < lowerBound => value
+VDL_76:148:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):value > upperBound => upperBound
+VDL_77:148:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):value > upperBound => value
+VDL_78:155:void_verifyValueBounds(java.lang.String,int,int,int):value < lowerBound => lowerBound
+VDL_79:155:void_verifyValueBounds(java.lang.String,int,int,int):value < lowerBound => value
+VDL_80:155:void_verifyValueBounds(java.lang.String,int,int,int):value > upperBound => upperBound
+VDL_81:155:void_verifyValueBounds(java.lang.String,int,int,int):value > upperBound => value
+VDL_82:162:int_getWrappedValue(int,int,int,int):currentValue + wrapValue => wrapValue
+VDL_83:162:int_getWrappedValue(int,int,int,int):currentValue + wrapValue => currentValue
+VDL_84:167:int_getWrappedValue(int,int,int):minValue >= maxValue => maxValue
+VDL_85:167:int_getWrappedValue(int,int,int):minValue >= maxValue => minValue
+VDL_86:170:int_getWrappedValue(int,int,int):maxValue - minValue => minValue
+VDL_87:170:int_getWrappedValue(int,int,int):maxValue - minValue => maxValue
+VDL_88:172:int_getWrappedValue(int,int,int):value >= 0 => 0
+VDL_89:173:int_getWrappedValue(int,int,int):value % wrapRange => wrapRange
+VDL_90:173:int_getWrappedValue(int,int,int):value % wrapRange => value
+VDL_91:173:int_getWrappedValue(int,int,int):value % wrapRange + minValue => value % wrapRange
+VDL_92:175:int_getWrappedValue(int,int,int):-value =>  
+VDL_93:175:int_getWrappedValue(int,int,int):-value % wrapRange => -value
+VDL_94:176:int_getWrappedValue(int,int,int):remByRange == 0 => 0
+VDL_95:177:int_getWrappedValue(int,int,int):0 + minValue => 0
+VDL_96:179:int_getWrappedValue(int,int,int):wrapRange - remByRange => remByRange
+VDL_97:179:int_getWrappedValue(int,int,int):wrapRange - remByRange => wrapRange
+VDL_98:179:int_getWrappedValue(int,int,int):wrapRange - remByRange + minValue => wrapRange - remByRange
+VDL_99:184:boolean_equals(java.lang.Object,java.lang.Object):object1 == object2 => object2
+VDL_100:184:boolean_equals(java.lang.Object,java.lang.Object):object1 == object2 => object1
+VDL_101:187:boolean_equals(java.lang.Object,java.lang.Object):object1 == null => null
+VDL_102:187:boolean_equals(java.lang.Object,java.lang.Object):object2 == null => null
+ODL_1:24:int_safeNegate(int):value == Integer.MIN_VALUE => value
+ODL_2:24:int_safeNegate(int):value == Integer.MIN_VALUE => Integer.MIN_VALUE
+ODL_3:27:int_safeNegate(int):-value => value
+ODL_4:32:int_safeAdd(int,int):val1 + val2 => val1
+ODL_5:32:int_safeAdd(int,int):val1 + val2 => val2
+ODL_6:33:int_safeAdd(int,int):val1 ^ sum => val1
+ODL_7:33:int_safeAdd(int,int):val1 ^ sum => sum
+ODL_8:33:int_safeAdd(int,int):(val1 ^ sum) < 0 => val1 ^ sum
+ODL_9:33:int_safeAdd(int,int):(val1 ^ sum) < 0 => 0
+ODL_10:33:int_safeAdd(int,int):val1 ^ val2 => val1
+ODL_11:33:int_safeAdd(int,int):val1 ^ val2 => val2
+ODL_12:33:int_safeAdd(int,int):(val1 ^ val2) >= 0 => val1 ^ val2
+ODL_13:33:int_safeAdd(int,int):(val1 ^ val2) >= 0 => 0
+ODL_14:33:int_safeAdd(int,int):(val1 ^ sum) < 0 && (val1 ^ val2) >= 0 => (val1 ^ sum) < 0
+ODL_15:33:int_safeAdd(int,int):(val1 ^ sum) < 0 && (val1 ^ val2) >= 0 => (val1 ^ val2) >= 0
+ODL_16:34:int_safeAdd(int,int):"The calculation caused an overflow: " + val1 => "The calculation caused an overflow: "
+ODL_17:34:int_safeAdd(int,int):"The calculation caused an overflow: " + val1 => val1
+ODL_18:34:int_safeAdd(int,int):"The calculation caused an overflow: " + val1 + " + " => "The calculation caused an overflow: " + val1
+ODL_19:34:int_safeAdd(int,int):"The calculation caused an overflow: " + val1 + " + " => " + "
+ODL_20:34:int_safeAdd(int,int):"The calculation caused an overflow: " + val1 + " + " + val2 => "The calculation caused an overflow: " + val1 + " + "
+ODL_21:34:int_safeAdd(int,int):"The calculation caused an overflow: " + val1 + " + " + val2 => val2
+ODL_22:41:long_safeAdd(long,long):val1 + val2 => val1
+ODL_23:41:long_safeAdd(long,long):val1 + val2 => val2
+ODL_24:42:long_safeAdd(long,long):val1 ^ sum => val1
+ODL_25:42:long_safeAdd(long,long):val1 ^ sum => sum
+ODL_26:42:long_safeAdd(long,long):(val1 ^ sum) < 0 => val1 ^ sum
+ODL_27:42:long_safeAdd(long,long):(val1 ^ sum) < 0 => 0
+ODL_28:42:long_safeAdd(long,long):val1 ^ val2 => val1
+ODL_29:42:long_safeAdd(long,long):val1 ^ val2 => val2
+ODL_30:42:long_safeAdd(long,long):(val1 ^ val2) >= 0 => val1 ^ val2
+ODL_31:42:long_safeAdd(long,long):(val1 ^ val2) >= 0 => 0
+ODL_32:42:long_safeAdd(long,long):(val1 ^ sum) < 0 && (val1 ^ val2) >= 0 => (val1 ^ sum) < 0
+ODL_33:42:long_safeAdd(long,long):(val1 ^ sum) < 0 && (val1 ^ val2) >= 0 => (val1 ^ val2) >= 0
+ODL_34:43:long_safeAdd(long,long):"The calculation caused an overflow: " + val1 => "The calculation caused an overflow: "
+ODL_35:43:long_safeAdd(long,long):"The calculation caused an overflow: " + val1 => val1
+ODL_36:43:long_safeAdd(long,long):"The calculation caused an overflow: " + val1 + " + " => "The calculation caused an overflow: " + val1
+ODL_37:43:long_safeAdd(long,long):"The calculation caused an overflow: " + val1 + " + " => " + "
+ODL_38:43:long_safeAdd(long,long):"The calculation caused an overflow: " + val1 + " + " + val2 => "The calculation caused an overflow: " + val1 + " + "
+ODL_39:43:long_safeAdd(long,long):"The calculation caused an overflow: " + val1 + " + " + val2 => val2
+ODL_40:50:long_safeSubtract(long,long):val1 - val2 => val1
+ODL_41:50:long_safeSubtract(long,long):val1 - val2 => val2
+ODL_42:51:long_safeSubtract(long,long):val1 ^ diff => val1
+ODL_43:51:long_safeSubtract(long,long):val1 ^ diff => diff
+ODL_44:51:long_safeSubtract(long,long):(val1 ^ diff) < 0 => val1 ^ diff
+ODL_45:51:long_safeSubtract(long,long):(val1 ^ diff) < 0 => 0
+ODL_46:51:long_safeSubtract(long,long):val1 ^ val2 => val1
+ODL_47:51:long_safeSubtract(long,long):val1 ^ val2 => val2
+ODL_48:51:long_safeSubtract(long,long):(val1 ^ val2) < 0 => val1 ^ val2
+ODL_49:51:long_safeSubtract(long,long):(val1 ^ val2) < 0 => 0
+ODL_50:51:long_safeSubtract(long,long):(val1 ^ diff) < 0 && (val1 ^ val2) < 0 => (val1 ^ diff) < 0
+ODL_51:51:long_safeSubtract(long,long):(val1 ^ diff) < 0 && (val1 ^ val2) < 0 => (val1 ^ val2) < 0
+ODL_52:52:long_safeSubtract(long,long):"The calculation caused an overflow: " + val1 => "The calculation caused an overflow: "
+ODL_53:52:long_safeSubtract(long,long):"The calculation caused an overflow: " + val1 => val1
+ODL_54:52:long_safeSubtract(long,long):"The calculation caused an overflow: " + val1 + " - " => "The calculation caused an overflow: " + val1
+ODL_55:52:long_safeSubtract(long,long):"The calculation caused an overflow: " + val1 + " - " => " - "
+ODL_56:52:long_safeSubtract(long,long):"The calculation caused an overflow: " + val1 + " - " + val2 => "The calculation caused an overflow: " + val1 + " - "
+ODL_57:52:long_safeSubtract(long,long):"The calculation caused an overflow: " + val1 + " - " + val2 => val2
+ODL_58:59:int_safeMultiply(int,int):(long) val1 * (long) val2 => (long) val1
+ODL_59:59:int_safeMultiply(int,int):(long) val1 * (long) val2 => (long) val2
+ODL_60:60:int_safeMultiply(int,int):total < Integer.MIN_VALUE => total
+ODL_61:60:int_safeMultiply(int,int):total < Integer.MIN_VALUE => Integer.MIN_VALUE
+ODL_62:60:int_safeMultiply(int,int):total > Integer.MAX_VALUE => total
+ODL_63:60:int_safeMultiply(int,int):total > Integer.MAX_VALUE => Integer.MAX_VALUE
+ODL_64:60:int_safeMultiply(int,int):total < Integer.MIN_VALUE || total > Integer.MAX_VALUE => total < Integer.MIN_VALUE
+ODL_65:60:int_safeMultiply(int,int):total < Integer.MIN_VALUE || total > Integer.MAX_VALUE => total > Integer.MAX_VALUE
+ODL_66:61:int_safeMultiply(int,int):"Multiplication overflows an int: " + val1 => "Multiplication overflows an int: "
+ODL_67:61:int_safeMultiply(int,int):"Multiplication overflows an int: " + val1 => val1
+ODL_68:61:int_safeMultiply(int,int):"Multiplication overflows an int: " + val1 + " * " => "Multiplication overflows an int: " + val1
+ODL_69:61:int_safeMultiply(int,int):"Multiplication overflows an int: " + val1 + " * " => " * "
+ODL_70:61:int_safeMultiply(int,int):"Multiplication overflows an int: " + val1 + " * " + val2 => "Multiplication overflows an int: " + val1 + " * "
+ODL_71:61:int_safeMultiply(int,int):"Multiplication overflows an int: " + val1 + " * " + val2 => val2
+ODL_72:69:long_safeMultiply(long,int):-1 => 1
+ODL_73:70:long_safeMultiply(long,int):val1 == Long.MIN_VALUE => val1
+ODL_74:70:long_safeMultiply(long,int):val1 == Long.MIN_VALUE => Long.MIN_VALUE
+ODL_75:71:long_safeMultiply(long,int):"Multiplication overflows a long: " + val1 => "Multiplication overflows a long: "
+ODL_76:71:long_safeMultiply(long,int):"Multiplication overflows a long: " + val1 => val1
+ODL_77:71:long_safeMultiply(long,int):"Multiplication overflows a long: " + val1 + " * " => "Multiplication overflows a long: " + val1
+ODL_78:71:long_safeMultiply(long,int):"Multiplication overflows a long: " + val1 + " * " => " * "
+ODL_79:71:long_safeMultiply(long,int):"Multiplication overflows a long: " + val1 + " * " + val2 => "Multiplication overflows a long: " + val1 + " * "
+ODL_80:71:long_safeMultiply(long,int):"Multiplication overflows a long: " + val1 + " * " + val2 => val2
+ODL_81:73:long_safeMultiply(long,int):-val1 => val1
+ODL_82:82:long_safeMultiply(long,int):val1 * val2 => val1
+ODL_83:82:long_safeMultiply(long,int):val1 * val2 => val2
+ODL_84:83:long_safeMultiply(long,int):total / val2 => total
+ODL_85:83:long_safeMultiply(long,int):total / val2 => val2
+ODL_86:83:long_safeMultiply(long,int):total / val2 != val1 => total / val2
+ODL_87:83:long_safeMultiply(long,int):total / val2 != val1 => val1
+ODL_88:84:long_safeMultiply(long,int):"Multiplication overflows a long: " + val1 => "Multiplication overflows a long: "
+ODL_89:84:long_safeMultiply(long,int):"Multiplication overflows a long: " + val1 => val1
+ODL_90:84:long_safeMultiply(long,int):"Multiplication overflows a long: " + val1 + " * " => "Multiplication overflows a long: " + val1
+ODL_91:84:long_safeMultiply(long,int):"Multiplication overflows a long: " + val1 + " * " => " * "
+ODL_92:84:long_safeMultiply(long,int):"Multiplication overflows a long: " + val1 + " * " + val2 => "Multiplication overflows a long: " + val1 + " * "
+ODL_93:84:long_safeMultiply(long,int):"Multiplication overflows a long: " + val1 + " * " + val2 => val2
+ODL_94:91:long_safeMultiply(long,long):val2 == 1 => val2
+ODL_95:91:long_safeMultiply(long,long):val2 == 1 => 1
+ODL_96:94:long_safeMultiply(long,long):val1 == 1 => val1
+ODL_97:94:long_safeMultiply(long,long):val1 == 1 => 1
+ODL_98:97:long_safeMultiply(long,long):val1 == 0 => val1
+ODL_99:97:long_safeMultiply(long,long):val1 == 0 => 0
+ODL_100:97:long_safeMultiply(long,long):val2 == 0 => val2
+ODL_101:97:long_safeMultiply(long,long):val2 == 0 => 0
+ODL_102:97:long_safeMultiply(long,long):val1 == 0 || val2 == 0 => val1 == 0
+ODL_103:97:long_safeMultiply(long,long):val1 == 0 || val2 == 0 => val2 == 0
+ODL_104:100:long_safeMultiply(long,long):val1 * val2 => val1
+ODL_105:100:long_safeMultiply(long,long):val1 * val2 => val2
+ODL_106:101:long_safeMultiply(long,long):total / val2 => total
+ODL_107:101:long_safeMultiply(long,long):total / val2 => val2
+ODL_108:101:long_safeMultiply(long,long):total / val2 != val1 => total / val2
+ODL_109:101:long_safeMultiply(long,long):total / val2 != val1 => val1
+ODL_110:101:long_safeMultiply(long,long):val1 == Long.MIN_VALUE => val1
+ODL_111:101:long_safeMultiply(long,long):val1 == Long.MIN_VALUE => Long.MIN_VALUE
+ODL_112:101:long_safeMultiply(long,long):-1 => 1
+ODL_113:101:long_safeMultiply(long,long):val2 == -1 => val2
+ODL_114:101:long_safeMultiply(long,long):val2 == -1 => -1
+ODL_115:101:long_safeMultiply(long,long):val1 == Long.MIN_VALUE && val2 == -1 => val1 == Long.MIN_VALUE
+ODL_116:101:long_safeMultiply(long,long):val1 == Long.MIN_VALUE && val2 == -1 => val2 == -1
+ODL_117:101:long_safeMultiply(long,long):total / val2 != val1 || val1 == Long.MIN_VALUE && val2 == -1 => total / val2 != val1
+ODL_118:101:long_safeMultiply(long,long):total / val2 != val1 || val1 == Long.MIN_VALUE && val2 == -1 => val1 == Long.MIN_VALUE && val2 == -1
+ODL_119:101:long_safeMultiply(long,long):val2 == Long.MIN_VALUE => val2
+ODL_120:101:long_safeMultiply(long,long):val2 == Long.MIN_VALUE => Long.MIN_VALUE
+ODL_121:101:long_safeMultiply(long,long):-1 => 1
+ODL_122:101:long_safeMultiply(long,long):val1 == -1 => val1
+ODL_123:101:long_safeMultiply(long,long):val1 == -1 => -1
+ODL_124:101:long_safeMultiply(long,long):val2 == Long.MIN_VALUE && val1 == -1 => val2 == Long.MIN_VALUE
+ODL_125:101:long_safeMultiply(long,long):val2 == Long.MIN_VALUE && val1 == -1 => val1 == -1
+ODL_126:101:long_safeMultiply(long,long):total / val2 != val1 || val1 == Long.MIN_VALUE && val2 == -1 || val2 == Long.MIN_VALUE && val1 == -1 => total / val2 != val1 || val1 == Long.MIN_VALUE && val2 == -1
+ODL_127:101:long_safeMultiply(long,long):total / val2 != val1 || val1 == Long.MIN_VALUE && val2 == -1 || val2 == Long.MIN_VALUE && val1 == -1 => val2 == Long.MIN_VALUE && val1 == -1
+ODL_128:102:long_safeMultiply(long,long):"Multiplication overflows a long: " + val1 => "Multiplication overflows a long: "
+ODL_129:102:long_safeMultiply(long,long):"Multiplication overflows a long: " + val1 => val1
+ODL_130:102:long_safeMultiply(long,long):"Multiplication overflows a long: " + val1 + " * " => "Multiplication overflows a long: " + val1
+ODL_131:102:long_safeMultiply(long,long):"Multiplication overflows a long: " + val1 + " * " => " * "
+ODL_132:102:long_safeMultiply(long,long):"Multiplication overflows a long: " + val1 + " * " + val2 => "Multiplication overflows a long: " + val1 + " * "
+ODL_133:102:long_safeMultiply(long,long):"Multiplication overflows a long: " + val1 + " * " + val2 => val2
+ODL_134:109:long_safeDivide(long,long):dividend == Long.MIN_VALUE => dividend
+ODL_135:109:long_safeDivide(long,long):dividend == Long.MIN_VALUE => Long.MIN_VALUE
+ODL_136:109:long_safeDivide(long,long):-1L => 1L
+ODL_137:109:long_safeDivide(long,long):divisor == -1L => divisor
+ODL_138:109:long_safeDivide(long,long):divisor == -1L => -1L
+ODL_139:109:long_safeDivide(long,long):dividend == Long.MIN_VALUE && divisor == -1L => dividend == Long.MIN_VALUE
+ODL_140:109:long_safeDivide(long,long):dividend == Long.MIN_VALUE && divisor == -1L => divisor == -1L
+ODL_141:110:long_safeDivide(long,long):"Multiplication overflows a long: " + dividend => "Multiplication overflows a long: "
+ODL_142:110:long_safeDivide(long,long):"Multiplication overflows a long: " + dividend => dividend
+ODL_143:110:long_safeDivide(long,long):"Multiplication overflows a long: " + dividend + " / " => "Multiplication overflows a long: " + dividend
+ODL_144:110:long_safeDivide(long,long):"Multiplication overflows a long: " + dividend + " / " => " / "
+ODL_145:110:long_safeDivide(long,long):"Multiplication overflows a long: " + dividend + " / " + divisor => "Multiplication overflows a long: " + dividend + " / "
+ODL_146:110:long_safeDivide(long,long):"Multiplication overflows a long: " + dividend + " / " + divisor => divisor
+ODL_147:112:long_safeDivide(long,long):dividend / divisor => dividend
+ODL_148:112:long_safeDivide(long,long):dividend / divisor => divisor
+ODL_149:117:long_safeDivide(long,long,java.math.RoundingMode):dividend == Long.MIN_VALUE => dividend
+ODL_150:117:long_safeDivide(long,long,java.math.RoundingMode):dividend == Long.MIN_VALUE => Long.MIN_VALUE
+ODL_151:117:long_safeDivide(long,long,java.math.RoundingMode):-1L => 1L
+ODL_152:117:long_safeDivide(long,long,java.math.RoundingMode):divisor == -1L => divisor
+ODL_153:117:long_safeDivide(long,long,java.math.RoundingMode):divisor == -1L => -1L
+ODL_154:117:long_safeDivide(long,long,java.math.RoundingMode):dividend == Long.MIN_VALUE && divisor == -1L => dividend == Long.MIN_VALUE
+ODL_155:117:long_safeDivide(long,long,java.math.RoundingMode):dividend == Long.MIN_VALUE && divisor == -1L => divisor == -1L
+ODL_156:118:long_safeDivide(long,long,java.math.RoundingMode):"Multiplication overflows a long: " + dividend => "Multiplication overflows a long: "
+ODL_157:118:long_safeDivide(long,long,java.math.RoundingMode):"Multiplication overflows a long: " + dividend => dividend
+ODL_158:118:long_safeDivide(long,long,java.math.RoundingMode):"Multiplication overflows a long: " + dividend + " / " => "Multiplication overflows a long: " + dividend
+ODL_159:118:long_safeDivide(long,long,java.math.RoundingMode):"Multiplication overflows a long: " + dividend + " / " => " / "
+ODL_160:118:long_safeDivide(long,long,java.math.RoundingMode):"Multiplication overflows a long: " + dividend + " / " + divisor => "Multiplication overflows a long: " + dividend + " / "
+ODL_161:118:long_safeDivide(long,long,java.math.RoundingMode):"Multiplication overflows a long: " + dividend + " / " + divisor => divisor
+ODL_162:127:int_safeToInt(long):Integer.MIN_VALUE <= value => Integer.MIN_VALUE
+ODL_163:127:int_safeToInt(long):Integer.MIN_VALUE <= value => value
+ODL_164:127:int_safeToInt(long):value <= Integer.MAX_VALUE => value
+ODL_165:127:int_safeToInt(long):value <= Integer.MAX_VALUE => Integer.MAX_VALUE
+ODL_166:127:int_safeToInt(long):Integer.MIN_VALUE <= value && value <= Integer.MAX_VALUE => Integer.MIN_VALUE <= value
+ODL_167:127:int_safeToInt(long):Integer.MIN_VALUE <= value && value <= Integer.MAX_VALUE => value <= Integer.MAX_VALUE
+ODL_168:130:int_safeToInt(long):"Value cannot fit in an int: " + value => "Value cannot fit in an int: "
+ODL_169:130:int_safeToInt(long):"Value cannot fit in an int: " + value => value
+ODL_170:141:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int):value < lowerBound => value
+ODL_171:141:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int):value < lowerBound => lowerBound
+ODL_172:141:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int):value > upperBound => value
+ODL_173:141:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int):value > upperBound => upperBound
+ODL_174:141:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int):value < lowerBound || value > upperBound => value < lowerBound
+ODL_175:141:void_verifyValueBounds(org.joda.time.DateTimeField,int,int,int):value < lowerBound || value > upperBound => value > upperBound
+ODL_176:148:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):value < lowerBound => value
+ODL_177:148:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):value < lowerBound => lowerBound
+ODL_178:148:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):value > upperBound => value
+ODL_179:148:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):value > upperBound => upperBound
+ODL_180:148:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):value < lowerBound || value > upperBound => value < lowerBound
+ODL_181:148:void_verifyValueBounds(org.joda.time.DateTimeFieldType,int,int,int):value < lowerBound || value > upperBound => value > upperBound
+ODL_182:155:void_verifyValueBounds(java.lang.String,int,int,int):value < lowerBound => value
+ODL_183:155:void_verifyValueBounds(java.lang.String,int,int,int):value < lowerBound => lowerBound
+ODL_184:155:void_verifyValueBounds(java.lang.String,int,int,int):value > upperBound => value
+ODL_185:155:void_verifyValueBounds(java.lang.String,int,int,int):value > upperBound => upperBound
+ODL_186:155:void_verifyValueBounds(java.lang.String,int,int,int):value < lowerBound || value > upperBound => value < lowerBound
+ODL_187:155:void_verifyValueBounds(java.lang.String,int,int,int):value < lowerBound || value > upperBound => value > upperBound
+ODL_188:162:int_getWrappedValue(int,int,int,int):currentValue + wrapValue => currentValue
+ODL_189:162:int_getWrappedValue(int,int,int,int):currentValue + wrapValue => wrapValue
+ODL_190:167:int_getWrappedValue(int,int,int):minValue >= maxValue => minValue
+ODL_191:167:int_getWrappedValue(int,int,int):minValue >= maxValue => maxValue
+ODL_192:170:int_getWrappedValue(int,int,int):maxValue - minValue => maxValue
+ODL_193:170:int_getWrappedValue(int,int,int):maxValue - minValue => minValue
+ODL_194:170:int_getWrappedValue(int,int,int):maxValue - minValue + 1 => maxValue - minValue
+ODL_195:170:int_getWrappedValue(int,int,int):maxValue - minValue + 1 => 1
+ODL_196:171:int_getWrappedValue(int,int,int):value -= minValue => value = minValue
+ODL_197:172:int_getWrappedValue(int,int,int):value >= 0 => value
+ODL_198:172:int_getWrappedValue(int,int,int):value >= 0 => 0
+ODL_199:173:int_getWrappedValue(int,int,int):value % wrapRange => value
+ODL_200:173:int_getWrappedValue(int,int,int):value % wrapRange => wrapRange
+ODL_201:173:int_getWrappedValue(int,int,int):value % wrapRange + minValue => value % wrapRange
+ODL_202:173:int_getWrappedValue(int,int,int):value % wrapRange + minValue => minValue
+ODL_203:175:int_getWrappedValue(int,int,int):-value => value
+ODL_204:175:int_getWrappedValue(int,int,int):-value % wrapRange => -value
+ODL_205:175:int_getWrappedValue(int,int,int):-value % wrapRange => wrapRange
+ODL_206:176:int_getWrappedValue(int,int,int):remByRange == 0 => remByRange
+ODL_207:176:int_getWrappedValue(int,int,int):remByRange == 0 => 0
+ODL_208:177:int_getWrappedValue(int,int,int):0 + minValue => 0
+ODL_209:177:int_getWrappedValue(int,int,int):0 + minValue => minValue
+ODL_210:179:int_getWrappedValue(int,int,int):wrapRange - remByRange => wrapRange
+ODL_211:179:int_getWrappedValue(int,int,int):wrapRange - remByRange => remByRange
+ODL_212:179:int_getWrappedValue(int,int,int):wrapRange - remByRange + minValue => wrapRange - remByRange
+ODL_213:179:int_getWrappedValue(int,int,int):wrapRange - remByRange + minValue => minValue
+ODL_214:184:boolean_equals(java.lang.Object,java.lang.Object):object1 == object2 => object1
+ODL_215:184:boolean_equals(java.lang.Object,java.lang.Object):object1 == object2 => object2
+ODL_216:187:boolean_equals(java.lang.Object,java.lang.Object):object1 == null => object1
+ODL_217:187:boolean_equals(java.lang.Object,java.lang.Object):object1 == null => null
+ODL_218:187:boolean_equals(java.lang.Object,java.lang.Object):object2 == null => object2
+ODL_219:187:boolean_equals(java.lang.Object,java.lang.Object):object2 == null => null
+ODL_220:187:boolean_equals(java.lang.Object,java.lang.Object):object1 == null || object2 == null => object1 == null
+ODL_221:187:boolean_equals(java.lang.Object,java.lang.Object):object1 == null || object2 == null => object2 == null
+CDL_1:33:int_safeAdd(int,int):(val1 ^ sum) < 0 => val1 ^ sum
+CDL_2:33:int_safeAdd(int,int):(val1 ^ val2) >= 0 => val1 ^ val2
+CDL_3:34:int_safeAdd(int,int):"The calculation caused an overflow: " + val1 => val1
+CDL_4:34:int_safeAdd(int,int):"The calculation caused an overflow: " + val1 + " + " => "The calculation caused an overflow: " + val1
+CDL_5:42:long_safeAdd(long,long):(val1 ^ sum) < 0 => val1 ^ sum
+CDL_6:42:long_safeAdd(long,long):(val1 ^ val2) >= 0 => val1 ^ val2
+CDL_7:43:long_safeAdd(long,long):"The calculation caused an overflow: " + val1 => val1
+CDL_8:43:long_safeAdd(long,long):"The calculation caused an overflow: " + val1 + " + " => "The calculation caused an overflow: " + val1
+CDL_9:51:long_safeSubtract(long,long):(val1 ^ diff) < 0 => val1 ^ diff
+CDL_10:51:long_safeSubtract(long,long):(val1 ^ val2) < 0 => val1 ^ val2
+CDL_11:52:long_safeSubtract(long,long):"The calculation caused an overflow: " + val1 => val1
+CDL_12:52:long_safeSubtract(long,long):"The calculation caused an overflow: " + val1 + " - " => "The calculation caused an overflow: " + val1
+CDL_13:61:int_safeMultiply(int,int):"Multiplication overflows an int: " + val1 => val1
+CDL_14:61:int_safeMultiply(int,int):"Multiplication overflows an int: " + val1 + " * " => "Multiplication overflows an int: " + val1
+CDL_15:69:long_safeMultiply(long,int):-1 =>  
+CDL_16:71:long_safeMultiply(long,int):"Multiplication overflows a long: " + val1 => val1
+CDL_17:71:long_safeMultiply(long,int):"Multiplication overflows a long: " + val1 + " * " => "Multiplication overflows a long: " + val1
+CDL_18:84:long_safeMultiply(long,int):"Multiplication overflows a long: " + val1 => val1
+CDL_19:84:long_safeMultiply(long,int):"Multiplication overflows a long: " + val1 + " * " => "Multiplication overflows a long: " + val1
+CDL_20:91:long_safeMultiply(long,long):val2 == 1 => val2
+CDL_21:94:long_safeMultiply(long,long):val1 == 1 => val1
+CDL_22:97:long_safeMultiply(long,long):val1 == 0 => val1
+CDL_23:97:long_safeMultiply(long,long):val2 == 0 => val2
+CDL_24:101:long_safeMultiply(long,long):-1 =>  
+CDL_25:101:long_safeMultiply(long,long):-1 =>  
+CDL_26:102:long_safeMultiply(long,long):"Multiplication overflows a long: " + val1 => val1
+CDL_27:102:long_safeMultiply(long,long):"Multiplication overflows a long: " + val1 + " * " => "Multiplication overflows a long: " + val1
+CDL_28:109:long_safeDivide(long,long):-1L =>  
+CDL_29:110:long_safeDivide(long,long):"Multiplication overflows a long: " + dividend => dividend
+CDL_30:110:long_safeDivide(long,long):"Multiplication overflows a long: " + dividend + " / " => "Multiplication overflows a long: " + dividend
+CDL_31:117:long_safeDivide(long,long,java.math.RoundingMode):-1L =>  
+CDL_32:118:long_safeDivide(long,long,java.math.RoundingMode):"Multiplication overflows a long: " + dividend => dividend
+CDL_33:118:long_safeDivide(long,long,java.math.RoundingMode):"Multiplication overflows a long: " + dividend + " / " => "Multiplication overflows a long: " + dividend
+CDL_34:130:int_safeToInt(long):"Value cannot fit in an int: " + value => value
+CDL_35:170:int_getWrappedValue(int,int,int):maxValue - minValue + 1 => maxValue - minValue
+CDL_36:172:int_getWrappedValue(int,int,int):value >= 0 => value
+CDL_37:176:int_getWrappedValue(int,int,int):remByRange == 0 => remByRange
+CDL_38:177:int_getWrappedValue(int,int,int):0 + minValue => minValue
+CDL_39:187:boolean_equals(java.lang.Object,java.lang.Object):object1 == null => object1
+CDL_40:187:boolean_equals(java.lang.Object,java.lang.Object):object2 == null => object2
