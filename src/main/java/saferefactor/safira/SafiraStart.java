@@ -26,11 +26,12 @@ public class SafiraStart {
 	private static String srcPath = "";
 	private static String binPath = "";
 	private static String libPath = "";
-	private static String pathToSource = "C:\\workspace\\safira\\example\\original";
-	private static String pathToTarget = "C:\\workspace\\safira\\example\\mutant01";
+	private static String pathToSource = "C:\\workspace\\safira-impact-analysis\\example\\FieldUtilsClass\\original";
+	private static String pathToTarget = "C:\\workspace\\safira-impact-analysis\\example\\FieldUtilsClass\\mutant02";
 
 
 	public static void main(String[] args) {
+            
 
 		if(args.length > 1) {
 			pathToSource = args[0];
@@ -55,15 +56,15 @@ public class SafiraStart {
 		analysisReport = analyzer.analyze();
 		ia = ((SafiraAnalyzer) analyzer).getIa();
 		methodsToTest = analysisReport.getMethodsToTest();
-		requiredClassesToTest = analysisReport.getRequiredClassesToTest();
+//		requiredClassesToTest = analysisReport.getRequiredClassesToTest();
 		
-		
-		System.out.println("METHODS: " + methodsToTest);
-		System.out.println("DEPENDENT CLASSES: " + requiredClassesToTest);
+//		System.out.println("Size: " + methodsToTest.size());
+		System.out.println(methodsToTest);
+//		System.out.println(requiredClassesToTest);
 
 		double stop = System.currentTimeMillis();
 		double total = ((stop - start) / 1000);
-		System.out.println("time to identify common methods (s): " + total);
+//		System.out.println("time to identify common methods (s): " + total);
 	}
 
 	private void setupFields() throws Throwable {
