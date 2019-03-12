@@ -76,6 +76,7 @@ public class ImpactAnalysis {
 	private int methodsToGenerateTests;
 	private int impactedMethods;
 	public String removeMethod = "";
+	private boolean isIntraClass = false;
 
 	private HashMap<String, Method> fileIntersectionAux;
 
@@ -83,15 +84,17 @@ public class ImpactAnalysis {
 
 	List<saferefactor.core.util.ast.Method> methods_to_test = new ArrayList<saferefactor.core.util.ast.Method>();
 
-	public ImpactAnalysis(String sourcePath, String targetPath, String bin) throws IOException {
+	public ImpactAnalysis(String sourcePath, String targetPath, String bin, boolean isIntraClass) throws IOException {
 		this.bin = bin;
+		this.isIntraClass = isIntraClass;
 		this.init(sourcePath, targetPath);
 
 	}
 
-	public ImpactAnalysis(String sourcePath, String targetPath, String bin, String removeMethod) throws IOException {
+	public ImpactAnalysis(String sourcePath, String targetPath, String bin, String removeMethod, boolean isIntraClass) throws IOException {
 		this.bin = bin;
 		this.removeMethod = removeMethod;
+		this.isIntraClass = isIntraClass;
 		this.init(sourcePath, targetPath);
 
 	}
@@ -109,7 +112,12 @@ public class ImpactAnalysis {
 		this.targetPath = targetPath;
 
 		getSourceClasses();
-		getTargetClassesForMutants(); //LEO: New method call to mutation
+		if(isIntraClass) {
+			getTargetClasses();
+			limitAnalysisToIntraClass();
+		} else {
+			getTargetClassesForMutants(); //LEO: New method call to mutation. Interclass analysis
+		}
 
 		initializeTypes();
 
@@ -119,7 +127,7 @@ public class ImpactAnalysis {
 		walkingInASourceProgram();
 		walkingInATargetProgram();
 
-//		 limitAnalysisToIntraClass();
+		
 
 		getSourceMethods();
 		getTargetMethods();

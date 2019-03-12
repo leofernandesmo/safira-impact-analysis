@@ -35,13 +35,14 @@ public class SafiraAnalyzer implements TransformationAnalyzer {
 	private final String tmpDir;
 	private String bin = "";
 	private ImpactAnalysis ia;
+	private boolean isIntraClass = false;
 
-	public SafiraAnalyzer(Project source, Project target, String tmpDir) {
+	public SafiraAnalyzer(Project source, Project target, String tmpDir, boolean isIntraClass) {
 		this.source = source;
 		this.target = target;
 		this.tmpDir = tmpDir;
 		this.bin = source.getBin();
-
+		this.isIntraClass = isIntraClass;
 	}
 
 	public Report analyze() throws Exception {
@@ -54,7 +55,7 @@ public class SafiraAnalyzer implements TransformationAnalyzer {
 		
 		
 		ia = new ImpactAnalysis(source.getProjectFolder().getAbsolutePath(), 
-				target.getProjectFolder().getAbsolutePath(), bin);
+				target.getProjectFolder().getAbsolutePath(), bin, isIntraClass);
 		List<Method> methods_to_test = ia.getMethods_to_test();
 		result.setMethodsToTest(methods_to_test);
 		

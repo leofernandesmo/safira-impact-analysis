@@ -28,16 +28,19 @@ public class SafiraStart {
 	private static String libPath = "";
 	private static String pathToSource = "C:\\workspace\\safira-impact-analysis\\example\\FieldUtilsClass\\original";
 	private static String pathToTarget = "C:\\workspace\\safira-impact-analysis\\example\\FieldUtilsClass\\mutant02";
+	private static boolean isIntraClass = false; 
 
 
 	public static void main(String[] args) {
-            
 
 		if(args.length > 1) {
 			pathToSource = args[0];
 			pathToTarget = args[1];
+			if(args.length > 2 && args[2].contains("-intraclass")) {
+				isIntraClass = true;
+			}
 		}
-		
+
 		SafiraStart myapp = new SafiraStart();
 		try {
 			myapp.setupFields();
@@ -52,14 +55,18 @@ public class SafiraStart {
 	private void safiraAnalyzer() throws Exception {
 		double start = System.currentTimeMillis();
 
-		analyzer = new SafiraAnalyzer(source, target, tmpFolder);
+		analyzer = new SafiraAnalyzer(source, target, tmpFolder, isIntraClass);
 		analysisReport = analyzer.analyze();
 		ia = ((SafiraAnalyzer) analyzer).getIa();
 		methodsToTest = analysisReport.getMethodsToTest();
 //		requiredClassesToTest = analysisReport.getRequiredClassesToTest();
-		
-//		System.out.println("Size: " + methodsToTest.size());
-		System.out.println(methodsToTest);
+
+		System.out.println("Size: " + methodsToTest.size());
+                String result = "";
+                for(Method res : methodsToTest){
+                    result += res.toString() + "|";
+                }
+		System.out.println(result);
 //		System.out.println(requiredClassesToTest);
 
 		double stop = System.currentTimeMillis();
@@ -72,7 +79,7 @@ public class SafiraStart {
 		File targetFile = new File(pathToTarget);
 		if (!sourceFile.exists())
 			throw new Throwable("Directory not found:" + sourceFile.getAbsolutePath());
-		
+
 		source = getProject(sourceFile);
 		target = getProject(targetFile);
 	}
